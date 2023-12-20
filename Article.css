@@ -1,10 +1,12 @@
 body {
     margin: 0;
+    background-color: white;
 }
+
 .navbar {
     position: absolute;
     overflow: hidden;
-    top: 3%;
+    top: 4%;
     right: 2%;
 }
 
@@ -13,9 +15,9 @@ body {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 80px;
+    padding: 14px 60px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
@@ -23,13 +25,30 @@ body {
     background-color: #ddd;
 }
 
-.row {
+.logoname {
+    position: absolute;
+    margin-left: 13vh;
+    margin-top: 4vh;
+    color: white;
+    font-size: 50px;
 
 }
 
 img {
-    position: relative;
+    position: absolute;
 }
+
+.logo {
+    width: 12vh;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+.topbackground {
+    width: 100%;
+    height: 90%;
+}
+
 
 .topimg {
     position: relative;
@@ -39,9 +58,9 @@ img {
     position: absolute;
     font-size: large;
     color: white;
-    left: 5%;
-    top: 25%;
-    font-size: 200px;
+    left: 4vh;
+    top: 25vh;
+    font-size: 180px;
     font-family: monospace;
     font-weight: bold;
 }
@@ -50,9 +69,9 @@ img {
     position: absolute;
     font-size: large;
     color: white;
-    left: 5%;
-    top: 50%;
-    font-size: 150px;
+    left: 5vh;
+    top: 42vh;
+    font-size: 80px;
     font-family: monospace;
 }
 
@@ -60,30 +79,344 @@ img {
     position: absolute;
     font-size: large;
     color: white;
-    left: 5%;
-    top: 70%;
+    left: 5vh;
+    top: 54vh;
     font-size: 40px;
     font-family: monospace;
 }
 
-.gridCat {
+.RnI {
+    position: absolute;
+    color: black;
+    font-size: 80px;
+    margin-left: 66vh;
+    margin-top: 110vh;
+}
 
+.RnIContent {
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 20vh;
+    margin-top: 120vh;
+    margin-right: 20vh;
 }
 
 .catCont1 {
+    position: absolute;
+    margin-top: 160vh;
+    margin-left: 10vh;
+    height: 80vh;
+    width: 43vh;
+}
 
+.catCont1img {
+    height: 80vh;
+    width: 50vh;
+}
+
+.cC1Title {
+    position: relative;
+    color: white;
+    top: 65%;
+    left: 5%;
+    font-size: 80px;
+    
+}
+
+.cC1Context {
+    position: relative;
+    color: white;
+    top: 67%;
+    left: 5%;
+    font-size: 40px;
+    
 }
 
 .catCont2 {
+    position: absolute;
+    margin-top: 160vh;
+    margin-left: 70vh;
+    height: 80vh;
+    width: 43vh;
+}
 
+.catCont2img {
+    height: 80vh;
+    width: 50vh;
+}
+
+.cC2Title {
+    position: relative;
+    color: white;
+    top: 65%;
+    left: 5%;
+    font-size: 80px;
+    
+}
+
+.cC2Context {
+    position: relative;
+    color: white;
+    top: 67%;
+    left: 5%;
+    font-size: 40px;
+    
 }
 
 .catCont3 {
-
+    position: absolute;
+    margin-top: 160vh;
+    margin-left: 130vh;
+    height: 80vh;
+    width: 43vh;
 }
 
-.gridRecentArticles {
+.catCont3img {
+    height: 80vh;
+    width: 50vh;
+}
+
+.cC3Title {
+    position: relative;
+    color: white;
+    top: 65%;
+    left: 5%;
+    font-size: 80px;
     
+}
+
+.cC3Context {
+    position: relative;
+    color: white;
+    top: 67%;
+    left: 5%;
+    font-size: 40px;
+    
+}
+
+.RecentArticles {
+    position: absolute;
+    left: 20vh;
+    top: 270vh;
+    color: black;
+    font-size: 80px;
+}
+
+.raGrid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 580px 580px 580px ;
+    grid-template-rows: 1000px 1000px 1000px;
+    gap: 3vh;
+    padding: 10px;
+    top: 290vh;
+    left: 26.5vh;
+}
+
+.raGrid > div.ra {
+    width: 40vh;
+    height: 70vh;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ra1Title {
+    position: relative;
+    top: 30vh;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra1Content {
+    position: relative;
+    width: 40vh;
+    top: 35vh;
+    color: black;
+    font-size: 30px;
+}
+
+.ra1img {
+    width: 40vh;
+}
+
+.ra2Title {
+    position: relative;
+    top: 30vh;
+    color: black;
+    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra2Content {
+    position: relative;
+    width: 40vh;
+    top: 35vh;
+    color: black;
+    font-size: 30px;
+}
+
+.ra2img {
+    width: 40vh;
+}
+
+.ra3Title {
+    position: relative;
+    top: 30vh;
+    color: black;
+    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra3Content {
+    position: relative;
+    width: 40vh;
+    top: 35vh;
+    color: black;
+    font-size: 30px;
+}
+
+.ra3img {
+    width: 40vh;
+    height: 28.5vh;
+}
+
+.ra4Title {
+    position: relative;
+    top: 30vh;
+    color: black;
+    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra4Content {
+    position: relative;
+    width: 40vh;
+    top: 35vh;
+    color: black;
+    font-size: 30px;
+}
+
+.ra4img {
+    width: 40vh;
+    height: 28.5vh;
+}
+
+.ra5Title {
+    position: relative;
+    top: 30vh;
+    color: black;
+    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra5Content {
+    position: relative;
+    width: 40vh;
+    top: 35vh;
+    color: black;
+    font-size: 30px;
+}
+
+.ra5img {
+    width: 40vh;
+    height: 28.5vh;
+}
+
+.ra6Title {
+    position: relative;
+    top: 30vh;
+    color: black;
+    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra6Content {
+    position: relative;
+    width: 40vh;
+    top: 35vh;
+    color: black;
+    font-size: 30px;
+}
+
+.ra6img {
+    width: 40vh;
+    height: 28.5vh;
+}
+
+.ra7Title {
+    position: relative;
+    top: 30vh;
+    color: black;
+    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra7Content {
+    position: relative;
+    width: 40vh;
+    top: 35vh;
+    color: black;
+    font-size: 30px;
+}
+
+.ra7img {
+    width: 40vh;
+    height: 28.5vh;
+}
+
+.ra8Title {
+    position: relative;
+    top: 30vh;
+    color: black;
+    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra8Content {
+    position: relative;
+    width: 40vh;
+    top: 35vh;
+    color: black;
+    font-size: 30px;
+}
+
+.ra8img {
+    width: 40vh;
+    height: 28.5vh;
+}
+
+.ra9Title {
+    position: relative;
+    top: 30vh;
+    color: black;
+    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra9Content {
+    position: relative;
+    width: 40vh;
+    top: 35vh;
+    color: black;
+    font-size: 30px;
+}
+
+.ra9img {
+    width: 40vh;
+    height: 28.5vh;
 }
 
 .Login {
@@ -96,6 +429,6 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     width: 200px;
 }
