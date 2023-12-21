@@ -224,6 +224,9 @@ img {
     margin-left: 20px;
 }
 
+.raGrid > div.ra a {
+    text-decoration: none;
+}
 .ra1Title {
     position: relative;
     top: 30vh;
