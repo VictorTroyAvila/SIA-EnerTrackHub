@@ -436,3 +436,23 @@ img {
     font-size: 20px;
     width: 200px;
 }
+
+.foot {
+    position: absolute;
+    background-color: #63D168;
+    height: 25%;
+    width: 100%;
+    bottom: -450%;
+}
+
+.foot a {
+    position: relative;
+    font-size: 30px;
+    display: block;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+.foot img {
+    margin: 3.45%;
+}
