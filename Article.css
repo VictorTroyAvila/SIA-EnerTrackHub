@@ -1,8 +1,20 @@
+                                                /* General */
 body {
     margin: 0;
     background-color: white;
 }
 
+img {
+    position: absolute;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+                                             /* Navigation bar */
 .navbar {
     position: absolute;
     overflow: hidden;
@@ -18,11 +30,44 @@ body {
     padding: 14px 60px;
     text-decoration: none;
     font-size: 30px;
-
+    
 }
 
 .navbar a:hover {
     background-color: #ddd;
+}
+
+.search {
+    float: right;
+    margin-top: 0.3%;
+    width: 20%;
+    font-size:  33px;
+    border-radius: 10px;
+    background: none;
+    margin-right: 0.5%;
+}
+
+.bsearch {
+    float: right;
+    margin-top: 0.3%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.Login {
+    float: right;
+    background-color: #04AA6D;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    margin-right: 2%;
 }
 
 .logoname {
@@ -34,10 +79,7 @@ body {
 
 }
 
-img {
-    position: absolute;
-}
-
+                                                    /* Top images */
 .logo {
     width: 12vh;
     margin-left: 2vh;
@@ -49,11 +91,7 @@ img {
     height: 90%;
 }
 
-
-.topimg {
-    position: relative;
-}
-
+                                                    /* Top content */
 .topcontent1 {
     position: absolute;
     font-size: large;
@@ -103,6 +141,7 @@ img {
     margin-right: 20vh;
 }
 
+                                            /* 3 Categories and Content */
 .catCont1 {
     position: absolute;
     margin-top: 160vh;
@@ -196,6 +235,7 @@ img {
     
 }
 
+                                                /* Articles */
 .RecentArticles {
     position: absolute;
     left: 20vh;
@@ -423,36 +463,237 @@ img {
     height: 28.5vh;
 }
 
-.Login {
-    float: right;
-    background-color: #04AA6D;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    width: 200px;
-}
-
+                                                 /* Footer */
 .foot {
+    position: absolute;
+    width: calc(100% / 12*12);
     position: absolute;
     background-color: #63D168;
     height: 25%;
-    width: 100%;
     bottom: -450%;
 }
 
-.foot a {
-    position: relative;
-    font-size: 30px;
-    display: block;
-    margin-left: 15%;
-    margin-top: 1%;
+/* CompanyTag */
+.CompanyTag {
+    width: calc(100% / 12*1.2);
+    margin-top: 4%;
+    margin-left: 4%;
+    text-align: center;
 }
 
-.foot img {
-    margin: 3.45%;
+.CompanyTag .name {
+    position: relative;
+    margin-top: 0%;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.CompanyTag .moto {
+    position: relative;
+    margin-top: 1%;
+    font-size: 20px;
+    color: white;
+}
+
+.CompanyTag img {
+    position: relative;
+    width: 50%;
+}
+
+/* Page Container */
+.PageContainer {
+    position: relative;
+    width: calc(100% / 12*1);
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.PageContainer .pages {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+.PageContainer .pHome {
+    position: relative;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pArticle {
+    position: relative;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pTools {
+    position: relative;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pGuide {
+    position: relative;
+    margin-left: 14%;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pAboutUs {
+    position: relative;
+    margin-left: 10%;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pContactUs {
+    position: relative;
+    margin-left: 16%;
+    font-size: 25px;
+    color: white;
+}
+
+/* Short Articles */
+.ShortArticles {
+   position: relative; 
+   margin-top: 3%;
+   margin-left: 9%;
+}
+
+.ShortArticles .latestArticles {
+    position: relative;
+    color: white;
+    font-size:  25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ShortArticles .la1 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+.ShortArticles .la2 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.ShortArticles .la3 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+/* Social Media Platforms */
+.smp {
+    position: relative;
+    width: calc(100% / 12*1);
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.socials {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.smp img {
+    position: relative;
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+
+/* Need Help */
+.SaS {
+    position: relative;
+    width: calc(100% / 12*1);
+    margin-top: 7.5%;
+    margin-left: -8.35%;
+}
+
+.SaS .help {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.SaS .hPp {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.SaS .hTc {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+/* Get in touch */
+.Contacts {
+    position: relative;
+    width: calc(100% / 12*1.5);
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.Contacts .gIt {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.Contacts .gtNo {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 14%;
+    color: white;
+    font-size: 25px;
+}
+
+.gtNo img {
+    position: absolute;
+    margin-left: -14%;
+    width: 12%;
+}
+
+.Contacts .gtEmail {
+    position: relative;
+    color: white;
+    margin-top: 6%;
+    margin-left: 14%;
+    font-size: 25px;
+}
+
+.gtEmail img {
+    position: absolute;
+    margin-left: -14%;
+    width: 12%;
+}
+
+.Contacts .gtAdrs {
+    position: relative;
+    color: white;
+    margin-top: 5%;
+    font-size: 25px;
 }
