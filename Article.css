@@ -44,6 +44,7 @@ img {
     font-size:  33px;
     border-radius: 10px;
     background: none;
+    margin-top: 0.5%;
     margin-right: 0.5%;
 }
 
@@ -67,10 +68,12 @@ img {
     display: inline-block;
     font-size: 20px;
     width: 200px;
+    margin-top: 0.3%;
     margin-right: 2%;
 }
 
 .logoname {
+    width: calc(100% / 12*1.4);
     position: absolute;
     margin-left: 13vh;
     margin-top: 4vh;
@@ -81,183 +84,136 @@ img {
 
                                                     /* Top images */
 .logo {
-    width: 12vh;
-    margin-left: 2vh;
-    margin-top: 2vh;
+    width: calc(100% / 12*0.77);
+    margin: 1%;
 }
 
 .topbackground {
-    width: 100%;
+    width: calc(100% / 12*12);
     height: 90%;
 }
 
                                                     /* Top content */
-.topcontent1 {
+.TopConts {
     position: absolute;
+    width: calc(100% / 12*5.8);
+    top: 25%;
+    left: 3%;
+}
+
+.topcontent1 {
+    position: relative;
     font-size: large;
     color: white;
-    left: 4vh;
-    top: 25vh;
     font-size: 180px;
     font-family: monospace;
     font-weight: bold;
 }
 
 .topcontent2 {
-    position: absolute;
+    position: relative;
     font-size: large;
     color: white;
-    left: 5vh;
-    top: 42vh;
     font-size: 80px;
     font-family: monospace;
+    margin-top: 5%;
 }
 
 .topcontent3 {
-    position: absolute;
+    position: relative;
     font-size: large;
     color: white;
-    left: 5vh;
-    top: 54vh;
-    font-size: 40px;
+    font-size: 30px;
     font-family: monospace;
+    margin-top: 5%;
+}
+
+                                            /* Resources and Insights */
+
+.RnICont {
+    position: absolute;
+    width: calc(100% / 12*8);
+    text-align: center;
+    top: 113%;
+    left: 16%;
 }
 
 .RnI {
-    position: absolute;
+    position: relative;
     color: black;
     font-size: 80px;
-    margin-left: 66vh;
-    margin-top: 110vh;
 }
 
 .RnIContent {
-    position: absolute;
+    position: relative;
     color: black;
     font-size: 50px;
-    text-align: center;
-    margin-left: 20vh;
-    margin-top: 120vh;
-    margin-right: 20vh;
 }
 
                                             /* 3 Categories and Content */
-.catCont1 {
+.MotherCont {
     position: absolute;
-    margin-top: 160vh;
-    margin-left: 10vh;
-    height: 80vh;
-    width: 43vh;
+    width: calc(100% / 12*12);
+    top: 160%;
 }
 
-.catCont1img {
-    height: 80vh;
-    width: 50vh;
+.row .catCont {
+    position: relative;
+    width: 26.6%;
+    margin-left: 4.5%;
 }
 
-.cC1Title {
+.row .catContimg {
+    height: 111%;
+    width: 100%;
+}
+
+.row .cCTitle {
     position: relative;
     color: white;
-    top: 65%;
-    left: 5%;
+    margin-top: 105%;
+    margin-left: 5%;
     font-size: 80px;
     
 }
 
-.cC1Context {
+.row .cCContext {
     position: relative;
     color: white;
-    top: 67%;
-    left: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
     font-size: 40px;
     
 }
 
-.catCont2 {
+                                                                /* Articles */
+
+.RecentsArticles {
     position: absolute;
-    margin-top: 160vh;
-    margin-left: 70vh;
-    height: 80vh;
-    width: 43vh;
+    width: calc(100% / 12*12);
+    top: 280%;
 }
 
-.catCont2img {
-    height: 80vh;
-    width: 50vh;
-}
-
-.cC2Title {
+.raTitle {
     position: relative;
-    color: white;
-    top: 65%;
-    left: 5%;
-    font-size: 80px;
-    
-}
-
-.cC2Context {
-    position: relative;
-    color: white;
-    top: 67%;
-    left: 5%;
-    font-size: 40px;
-    
-}
-
-.catCont3 {
-    position: absolute;
-    margin-top: 160vh;
-    margin-left: 130vh;
-    height: 80vh;
-    width: 43vh;
-}
-
-.catCont3img {
-    height: 80vh;
-    width: 50vh;
-}
-
-.cC3Title {
-    position: relative;
-    color: white;
-    top: 65%;
-    left: 5%;
-    font-size: 80px;
-    
-}
-
-.cC3Context {
-    position: relative;
-    color: white;
-    top: 67%;
-    left: 5%;
-    font-size: 40px;
-    
-}
-
-                                                /* Articles */
-.RecentArticles {
-    position: absolute;
-    left: 20vh;
-    top: 270vh;
     color: black;
     font-size: 80px;
+    margin-left: 5%;
 }
 
 .raGrid {
-    position: absolute;
+    position: relative;
     display: grid;
-    grid-template-columns: 580px 580px 580px ;
-    grid-template-rows: 1000px 1000px 1000px;
-    gap: 3vh;
+    grid-template-columns: 27.2% 27.2% 27.2% ;
+    grid-template-rows: 70vh 70vh 70vh;
+    gap: 3%;
     padding: 10px;
-    top: 290vh;
-    left: 26.5vh;
+    margin-left: 12%;
+    margin-top: 5%;
 }
 
 .raGrid > div.ra {
-    width: 40vh;
-    height: 70vh;
+    position: relative;
     border: 1px solid black;
     padding: 10px;
     margin-top: 20px;
@@ -268,199 +224,25 @@ img {
     text-decoration: none;
 }
 
-.ra1Title {
+.ra .Title {
     position: relative;
-    top: 30vh;
+    top: 3%;
     color: black;
     font-size: 40px;
     font-weight: bold;
 }
 
-.ra1Content {
+.ra .Content {
     position: relative;
-    width: 40vh;
-    top: 35vh;
+    top: 5%;
     color: black;
     font-size: 30px;
 }
 
-.ra1img {
-    width: 40vh;
-}
-
-.ra2Title {
+.ra img {
     position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra2Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra2img {
-    width: 40vh;
-}
-
-.ra3Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra3Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra3img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra4Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra4Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra4img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra5Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra5Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra5img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra6Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra6Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra6img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra7Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra7Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra7img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra8Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra8Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra8img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra9Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra9Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra9img {
-    width: 40vh;
-    height: 28.5vh;
+    width: 100%;
+    height: 43.4%;
 }
 
                                                  /* Footer */
