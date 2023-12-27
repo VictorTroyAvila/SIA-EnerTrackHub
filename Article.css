@@ -1,8 +1,20 @@
+/* General */
 body {
     margin: 0;
     background-color: white;
 }
 
+img {
+    position: absolute;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+/* Navigation bar */
 .navbar {
     position: absolute;
     overflow: hidden;
@@ -18,409 +30,30 @@ body {
     padding: 14px 60px;
     text-decoration: none;
     font-size: 30px;
-
+    
 }
 
 .navbar a:hover {
     background-color: #ddd;
 }
 
-.logoname {
-    position: absolute;
-    margin-left: 13vh;
-    margin-top: 4vh;
-    color: white;
-    font-size: 50px;
-
+.search {
+    float: right;
+    margin-top: 0.3%;
+    width: 20%;
+    font-size:  33px;
+    border-radius: 10px;
+    background: none;
+    margin-top: 0.5%;
+    margin-right: 0.5%;
 }
 
-img {
-    position: absolute;
-}
-
-.logo {
-    width: 12vh;
-    margin-left: 2vh;
-    margin-top: 2vh;
-}
-
-.topbackground {
-    width: 100%;
-    height: 90%;
-}
-
-
-.topimg {
-    position: relative;
-}
-
-.topcontent1 {
-    position: absolute;
-    font-size: large;
-    color: white;
-    left: 4vh;
-    top: 25vh;
-    font-size: 180px;
-    font-family: monospace;
-    font-weight: bold;
-}
-
-.topcontent2 {
-    position: absolute;
-    font-size: large;
-    color: white;
-    left: 5vh;
-    top: 42vh;
-    font-size: 80px;
-    font-family: monospace;
-}
-
-.topcontent3 {
-    position: absolute;
-    font-size: large;
-    color: white;
-    left: 5vh;
-    top: 54vh;
-    font-size: 40px;
-    font-family: monospace;
-}
-
-.RnI {
-    position: absolute;
-    color: black;
-    font-size: 80px;
-    margin-left: 66vh;
-    margin-top: 110vh;
-}
-
-.RnIContent {
-    position: absolute;
-    color: black;
-    font-size: 50px;
-    text-align: center;
-    margin-left: 20vh;
-    margin-top: 120vh;
-    margin-right: 20vh;
-}
-
-.catCont1 {
-    position: absolute;
-    margin-top: 160vh;
-    margin-left: 10vh;
-    height: 80vh;
-    width: 43vh;
-}
-
-.catCont1img {
-    height: 80vh;
-    width: 50vh;
-}
-
-.cC1Title {
-    position: relative;
-    color: white;
-    top: 65%;
-    left: 5%;
-    font-size: 80px;
-    
-}
-
-.cC1Context {
-    position: relative;
-    color: white;
-    top: 67%;
-    left: 5%;
-    font-size: 40px;
-    
-}
-
-.catCont2 {
-    position: absolute;
-    margin-top: 160vh;
-    margin-left: 70vh;
-    height: 80vh;
-    width: 43vh;
-}
-
-.catCont2img {
-    height: 80vh;
-    width: 50vh;
-}
-
-.cC2Title {
-    position: relative;
-    color: white;
-    top: 65%;
-    left: 5%;
-    font-size: 80px;
-    
-}
-
-.cC2Context {
-    position: relative;
-    color: white;
-    top: 67%;
-    left: 5%;
-    font-size: 40px;
-    
-}
-
-.catCont3 {
-    position: absolute;
-    margin-top: 160vh;
-    margin-left: 130vh;
-    height: 80vh;
-    width: 43vh;
-}
-
-.catCont3img {
-    height: 80vh;
-    width: 50vh;
-}
-
-.cC3Title {
-    position: relative;
-    color: white;
-    top: 65%;
-    left: 5%;
-    font-size: 80px;
-    
-}
-
-.cC3Context {
-    position: relative;
-    color: white;
-    top: 67%;
-    left: 5%;
-    font-size: 40px;
-    
-}
-
-.RecentArticles {
-    position: absolute;
-    left: 20vh;
-    top: 270vh;
-    color: black;
-    font-size: 80px;
-}
-
-.raGrid {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 580px 580px 580px ;
-    grid-template-rows: 1000px 1000px 1000px;
-    gap: 3vh;
-    padding: 10px;
-    top: 290vh;
-    left: 26.5vh;
-}
-
-.raGrid > div.ra {
-    width: 40vh;
-    height: 70vh;
-    border: 1px solid black;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.raGrid > div.ra a {
-    text-decoration: none;
-}
-
-.ra1Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra1Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra1img {
-    width: 40vh;
-}
-
-.ra2Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra2Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra2img {
-    width: 40vh;
-}
-
-.ra3Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra3Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra3img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra4Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra4Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra4img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra5Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra5Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra5img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra6Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra6Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra6img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra7Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra7Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra7img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra8Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra8Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra8img {
-    width: 40vh;
-    height: 28.5vh;
-}
-
-.ra9Title {
-    position: relative;
-    top: 30vh;
-    color: black;
-    font-size: 30px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ra9Content {
-    position: relative;
-    width: 40vh;
-    top: 35vh;
-    color: black;
-    font-size: 30px;
-}
-
-.ra9img {
-    width: 40vh;
-    height: 28.5vh;
+.bsearch {
+    float: right;
+    margin-top: 0.3%;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .Login {
@@ -435,28 +68,414 @@ img {
     display: inline-block;
     font-size: 20px;
     width: 200px;
+    margin-top: 0.3%;
+    margin-right: 2%;
 }
 
+.logoname {
+    width: calc(100% / 12*1.4);
+    position: absolute;
+    margin-left: 13vh;
+    margin-top: 4vh;
+    color: white;
+    font-size: 50px;
+
+}
+
+/* Top images */
+.logo {
+    width: calc(100% / 12*0.77);
+    margin: 1%;
+}
+
+.topbackground {
+    width: calc(100% / 12*12);
+    height: 90%;
+}
+
+/* Top content */
+.TopConts {
+    position: absolute;
+    width: calc(100% / 12*5.8);
+    top: 25%;
+    left: 3%;
+}
+
+.topcontent1 {
+    position: relative;
+    font-size: large;
+    color: white;
+    font-size: 180px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.topcontent2 {
+    position: relative;
+    font-size: large;
+    color: white;
+    font-size: 80px;
+    font-family: monospace;
+    margin-top: 5%;
+}
+
+.topcontent3 {
+    position: relative;
+    font-size: large;
+    color: white;
+    font-size: 30px;
+    font-family: monospace;
+    margin-top: 5%;
+}
+
+/* Resources and Insights */
+
+.RnICont {
+    position: absolute;
+    width: calc(100% / 12*8);
+    text-align: center;
+    top: 113%;
+    left: 16%;
+}
+
+.RnI {
+    position: relative;
+    color: black;
+    font-size: 80px;
+}
+
+.RnIContent {
+    position: relative;
+    color: black;
+    font-size: 50px;
+}
+
+/* 3 Categories and Content */
+.MotherCont {
+    position: absolute;
+    width: calc(100% / 12*12);
+    top: 160%;
+}
+
+.row .catCont {
+    position: relative;
+    width: 26.6%;
+    margin-left: 4.5%;
+}
+
+.row .catContimg {
+    height: 111%;
+    width: 100%;
+}
+
+.row .cCTitle {
+    position: relative;
+    color: white;
+    margin-top: 105%;
+    margin-left: 5%;
+    font-size: 80px;
+    
+}
+
+.row .cCContext {
+    position: relative;
+    color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 40px;
+    
+}
+
+/* Articles */
+
+.RecentsArticles {
+    position: absolute;
+    width: calc(100% / 12*12);
+    top: 280%;
+}
+
+.raTitle {
+    position: relative;
+    color: black;
+    font-size: 80px;
+    margin-left: 5%;
+}
+
+.raGrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 27.2% 27.2% 27.2% ;
+    grid-template-rows: 70vh 70vh 70vh;
+    gap: 3%;
+    padding: 10px;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.raGrid > div.ra {
+    position: relative;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.raGrid > div.ra a {
+    text-decoration: none;
+}
+
+.ra .Title {
+    position: relative;
+    top: 3%;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ra .Content {
+    position: relative;
+    top: 5%;
+    color: black;
+    font-size: 30px;
+}
+
+.ra img {
+    position: relative;
+    width: 100%;
+    height: 43.4%;
+}
+
+/* Footer */
 .foot {
+    position: absolute;
+    width: calc(100% / 12*12);
     position: absolute;
     background-color: #63D168;
     height: 25%;
-    width: 100%;
     bottom: -450%;
 }
 
-.foot a {
+/* CompanyTag */
+.CompanyTag {
+    width: calc(100% / 12*1.2);
+    margin-top: 4%;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.CompanyTag .name {
     position: relative;
-    font-size: 30px;
-    display: block;
-    margin-left: 15%;
+    margin-top: 0%;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.CompanyTag .moto {
+    position: relative;
     margin-top: 1%;
+    font-size: 20px;
+    color: white;
 }
 
-.foot img {
-    margin: 3.45%;
+.CompanyTag img {
+    position: relative;
+    width: 50%;
 }
 
-.navbar .search-but {
-    
+/* Page Container */
+.PageContainer {
+    position: relative;
+    width: calc(100% / 12*1);
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.PageContainer .pages {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+.PageContainer .pHome {
+    position: relative;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pArticle {
+    position: relative;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pTools {
+    position: relative;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pGuide {
+    position: relative;
+    margin-left: 14%;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pAboutUs {
+    position: relative;
+    margin-left: 10%;
+    font-size: 25px;
+    color: white;
+}
+
+.PageContainer .pContactUs {
+    position: relative;
+    margin-left: 16%;
+    font-size: 25px;
+    color: white;
+}
+
+/* Short Articles */
+.ShortArticles {
+   position: relative; 
+   margin-top: 3%;
+   margin-left: 9%;
+}
+
+.ShortArticles .latestArticles {
+    position: relative;
+    color: white;
+    font-size:  25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ShortArticles .la1 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+.ShortArticles .la2 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.ShortArticles .la3 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+/* Social Media Platforms */
+.smp {
+    position: relative;
+    width: calc(100% / 12*1);
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.socials {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.smp img {
+    position: relative;
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+
+/* Need Help */
+.SaS {
+    position: relative;
+    width: calc(100% / 12*1);
+    margin-top: 7.5%;
+    margin-left: -8.35%;
+}
+
+.SaS .help {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.SaS .hPp {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.SaS .hTc {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+/* Get in touch */
+.Contacts {
+    position: relative;
+    width: calc(100% / 12*1.5);
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.Contacts .gIt {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.Contacts .gtNo {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 14%;
+    color: white;
+    font-size: 25px;
+}
+
+.gtNo img {
+    position: absolute;
+    margin-left: -14%;
+    width: 12%;
+}
+
+.Contacts .gtEmail {
+    position: relative;
+    color: white;
+    margin-top: 6%;
+    margin-left: 14%;
+    font-size: 25px;
+}
+
+.gtEmail img {
+    position: absolute;
+    margin-left: -14%;
+    width: 12%;
+}
+
+.Contacts .gtAdrs {
+    position: relative;
+    color: white;
+    margin-top: 5%;
+    font-size: 25px;
 }
