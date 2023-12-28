@@ -1,0 +1,143 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #04AA6D; 
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .foot a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .foot img {
+    max-width: 100%;
+  }
+  
+   .PageContainer, .ShortArticles, .smp, .SaS, .Contacts {
+    flex: 5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .smp{
+    margin-left: 70px;
+  }
+  .Contacts{
+    margin-left: 70px;
+  }
+  .PageContainer1{
+    display:inline-tble;
+    margin-left: 70px;
+  }
+  .PageContainer2{
+    display:inline-table;
+    padding-top: 58px;
+    padding-left: 20px;
+  }
+  .pages{
+    margin-top: 20px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .moto {
+    font-style: italic;
+    color: #ffffff;
+  }
+  
+  .pages, .latestArticles, .socials, .help, .gIt {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .row {
+    display:flex;
+  }
+  .CompanyTag img {
+    width: 150px; 
+    margin-bottom: -20px;
+    margin-top: -30px;
+}
+
+.la3{
+  margin-top: 10px;
+}
+
+.ShortArticles{
+  margin-left: 70px;
+}
+/* Social Media Platforms */
+.socials {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fb, .ig, .twtr, .yt {
+  max-width: 20px; /
+  height: auto; 
+  margin-right: 10px; 
+}
+
+.gtEmail img,.gtNo img {
+  max-width: 10px; 
+  height: auto; 
+  margin-right: 5px; 
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px; 
+  margin-bottom: -30px;
+  color: #fff; 
+}
+  
+  
+
+  @media (max-width: 768px) {
+    .foot {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .foot a {
+      margin: 10px 0;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  }
+  
