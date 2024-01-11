@@ -15,9 +15,9 @@ body {
 /* Navigation bar */
 .navbar {
     position: absolute;
-    overflow: hidden;
+    width: calc(100% / 12*10);
     top: 4%;
-    right: 2%;
+    right: 1%;
 }
 
 .navbar a {
@@ -25,9 +25,9 @@ body {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 60px;
+    padding: 1% 2%;
     text-decoration: none;
-    font-size: 1.3636363636363635em;
+    font-size: 30px;
     
 }
 
@@ -39,7 +39,7 @@ body {
     float: right;
     margin-top: 0.3%;
     width: 20%;
-    font-size:  1.5em;
+    font-size:  33px;
     border-radius: 10px;
     background: none;
     margin-top: 0.5%;
@@ -64,7 +64,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.9090909090909091em;
+    font-size: 20px;
     width: 200px;
     margin-top: 0.3%;
     margin-right: 2%;
@@ -76,7 +76,7 @@ body {
     top: 4%;
     left: 7%;
     color: white;
-    font-size: 2.272727272727273em;
+    font-size: 50px;
     font-style: italic;
 }
 
@@ -105,7 +105,7 @@ body {
     position: relative;
     font-size: large;
     color: white;
-    font-size: 8.181818181818182em;
+    font-size: 180px;
     font-weight: bold;
     font-style: italic;
 }
@@ -114,7 +114,7 @@ body {
     position: relative;
     font-size: large;
     color: white;
-    font-size: 3.6363636363636362em;
+    font-size: 80px;
     margin-top: 5%;
 }
 
@@ -138,7 +138,7 @@ body {
 .RnI {
     position: relative;
     color: black;
-    font-size: 3.6363636363636362em;
+    font-size: 80px;
 }
 
 .RnIContent {
@@ -168,14 +168,14 @@ body {
     position: absolute;
     color: white;
     top: 62%;
-    font-size: 3.6363636363636362em;
+    font-size: 80px;
 }
 
 .catCont .cCContext {
     position: absolute;
     color: white;
     top: 72%;
-    font-size: 1.8181818181818181em;
+    font-size: 40px;
 }
 
 /* Articles */
@@ -188,7 +188,7 @@ body {
 .raTitle {
     position: relative;
     color: black;
-    font-size: 3.6363636363636362em;
+    font-size: 80px;
     margin-left: 5%;
 }
 
@@ -219,7 +219,7 @@ body {
     position: relative;
     top: 3%;
     color: black;
-    font-size: 1.8181818181818181em;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -227,7 +227,7 @@ body {
     position: relative;
     top: 5%;
     color: black;
-    font-size: 1.3636363636363635em;
+    font-size: 30px;
 }
 
 .ra img {
@@ -255,7 +255,7 @@ body {
 .CompanyTag .name {
     position: relative;
     margin-top: 0%;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     color: white;
     font-weight: bold;
     font-style: italic;
@@ -264,7 +264,7 @@ body {
 .CompanyTag .moto {
     position: relative;
     margin-top: 1%;
-    font-size: 0.9090909090909091em;
+    font-size: 20px;
     color: white;
 }
 
@@ -283,47 +283,47 @@ body {
 
 .PageContainer .pages {
     position: relative;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     font-weight: bold;
     color: white;
 }
 
 .PageContainer .pHome {
     position: relative;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     color: white;
 }
 
 .PageContainer .pArticle {
     position: relative;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     color: white;
 }
 
 .PageContainer .pTools {
     position: relative;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     color: white;
 }
 
 .PageContainer .pGuide {
     position: relative;
     margin-left: 14%;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     color: white;
 }
 
 .PageContainer .pAboutUs {
     position: relative;
     margin-left: 10%;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     color: white;
 }
 
 .PageContainer .pContactUs {
     position: relative;
     margin-left: 16%;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     color: white;
 }
 
@@ -336,8 +336,8 @@ body {
 
 .ShortArticles .latestArticles {
     position: relative;
-    color: white;
-    font-size:  1.1363636363636365em;
+    color: whi5te;
+    font-size:  25px;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -345,21 +345,21 @@ body {
 .ShortArticles .la1 {
     position: relative;
     color: white;
-    font-size: 0.9090909090909091em;
+    font-size: 20px;
     margin-top: 10%;
 }
 
 .ShortArticles .la2 {
     position: relative;
     color: white;
-    font-size: 0.9090909090909091em;
+    font-size: 20px;
     margin-top: 5%;
 }
 
 .ShortArticles .la3 {
     position: relative;
     color: white;
-    font-size: 0.9090909090909091em;
+    font-size: 20px;
     margin-top: 5%;
 }
 
@@ -374,7 +374,7 @@ body {
 .socials {
     position: relative;
     color: white;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -398,7 +398,7 @@ body {
 .SaS .help {
     position: relative;
     color: white;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -406,14 +406,14 @@ body {
 .SaS .hPp {
     position: relative;
     color: white;
-    font-size: 0.9090909090909091em;
+    font-size: 20px;
     margin-top: 5%;
 }
 
 .SaS .hTc {
     position: relative;
     color: white;
-    font-size: 0.9090909090909091em;
+    font-size: 25px;
     margin-top: 5%;
 }
 
@@ -428,7 +428,7 @@ body {
 .Contacts .gIt {
     position: relative;
     color: white;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
     text-decoration: underline;
     font-weight: bold;
 
@@ -439,7 +439,7 @@ body {
     margin-top: 5%;
     margin-left: 14%;
     color: white;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
 }
 
 .gtNo img {
@@ -453,7 +453,7 @@ body {
     color: white;
     margin-top: 6%;
     margin-left: 14%;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
 }
 
 .gtEmail img {
@@ -466,29 +466,23 @@ body {
     position: relative;
     color: white;
     margin-top: 5%;
-    font-size: 1.1363636363636365em;
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 767px) {
     body {
-        margin: 0;
-        font-family: "Inter", sans-serif;
         font-size: 10px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     body {
-        margin: 0;
-        font-family: "Inter", sans-serif;
         font-size: 14px;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     body {
-        margin: 0;
-        font-family: "Inter", sans-serif;
         font-size: 22px;
     }
 }
