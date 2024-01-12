@@ -97,7 +97,7 @@ body {
 .TopConts {
     position: absolute;
     width: calc(100% / 12*5.8);
-    top: 25%;
+    top: 40%;
     left: 3%;
 }
 
@@ -105,24 +105,23 @@ body {
     position: relative;
     font-size: large;
     color: white;
-    font-size: 180px;
     font-weight: bold;
-    font-style: italic;
+    font-size: 120px;
 }
 
 .topcontent2 {
     position: relative;
     font-size: large;
     color: white;
-    font-size: 80px;
-    margin-top: 5%;
+    font-size: 60px;
+    margin-top: 3%;
 }
 
 .topcontent3 {
     position: relative;
     font-size: large;
     color: white;
-    font-size: 1.3636363636363635em;
+    font-size: 30px;
     margin-top: 5%;
 }
 
@@ -138,13 +137,13 @@ body {
 .RnI {
     position: relative;
     color: black;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .RnIContent {
     position: relative;
     color: black;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 /* 3 Categories and Content */
@@ -168,14 +167,14 @@ body {
     position: absolute;
     color: white;
     top: 62%;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .catCont .cCContext {
     position: absolute;
     color: white;
     top: 72%;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* Articles */
@@ -188,7 +187,7 @@ body {
 .raTitle {
     position: relative;
     color: black;
-    font-size: 80px;
+    font-size: 60px;
     margin-left: 5%;
 }
 
@@ -219,7 +218,7 @@ body {
     position: relative;
     top: 3%;
     color: black;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -227,7 +226,7 @@ body {
     position: relative;
     top: 5%;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .ra img {
@@ -290,40 +289,40 @@ body {
 
 .PageContainer .pHome {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
 .PageContainer .pArticle {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
 .PageContainer .pTools {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
 .PageContainer .pGuide {
     position: relative;
     margin-left: 14%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
 .PageContainer .pAboutUs {
     position: relative;
     margin-left: 10%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
 .PageContainer .pContactUs {
     position: relative;
     margin-left: 16%;
-    font-size: 25px;
+    font-size: 20   px;
     color: white;
 }
 
