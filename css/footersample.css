@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -8,42 +10,21 @@ body, h1, h2, h3, p, ul, li {
   }
   
   /* Global styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-  }
-  
   .container {
-    max-width: 1200px;
+    width: calc(100% / 12*7);
     margin: 0 auto;
     padding: 20px;
   }
   
   /* Footer styles */
   footer {
-    background-color: #04AA6D; 
+    background-color: #63D168; 
+    font-family: "Inter", sans-serif;
     color: #fff;
     padding: 20px 0;
   }
-  
-  .foot {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .foot a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  .foot img {
-    max-width: 100%;
-  }
-  
-   .PageContainer, .ShortArticles, .smp, .SaS, .Contacts {
+ 
+  .PageContainer, .ShortArticles, .smp, .SaS, .Contacts {
     flex: 5;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -88,8 +69,6 @@ body, h1, h2, h3, p, ul, li {
   }
   .CompanyTag img {
     width: 150px; 
-    margin-bottom: -20px;
-    margin-top: -30px;
 }
 
 .la3{
@@ -99,6 +78,7 @@ body, h1, h2, h3, p, ul, li {
 .ShortArticles{
   margin-left: 70px;
 }
+
 /* Social Media Platforms */
 .socials {
   font-size: 18px;
@@ -118,10 +98,13 @@ body, h1, h2, h3, p, ul, li {
 }
 
 .copyright {
-  text-align: center;
-  margin-top: 20px; 
-  margin-bottom: -30px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
   color: #fff; 
+  height: fit-content;
+  width: fit-content;
 }
   
   

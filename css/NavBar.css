@@ -1,12 +1,10 @@
 header {
-  width: 100%;
+  width: calc(100% / 12*12);
   height: 110px;
-  background-color:black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
 }
 
 .logo {
@@ -14,9 +12,8 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
   }
+
   .logo img {
     width: 50%;
   }
@@ -28,6 +25,7 @@ header {
     position: relative;
     left: -32px;
   }
+
   .nav {
     width: auto;
   }
@@ -36,7 +34,7 @@ header {
     align-items: center;
     width: 100%;
     height: 100%;
-    gap: 2rem;
+    gap: 6rem;
   }
   .nav ul li {
     list-style: none;
@@ -46,6 +44,12 @@ header {
     color: white;
     cursor: pointer;
   }
+
+  .nav ul li a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
   .login {
     width: auto;
     height: 100%;
