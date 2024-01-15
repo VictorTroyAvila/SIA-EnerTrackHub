@@ -29,3 +29,39 @@ function closeButton() {
     y.style.display = "block";
     }
 }
+
+function AFSp() {
+    var y = document.getElementById("AFSpbtngrp");
+    if (y.style.display === "none") {
+    y.style.display = "block";
+    } else {
+    y.style.display = "none";
+    }
+}
+
+function AD() {
+    var y = document.getElementById("ADbtngrp");
+    if (y.style.display === "none") {
+    y.style.display = "block";
+    } else {
+    y.style.display = "none";
+    }
+}
+
+function AFSi() {
+    var y = document.getElementById("AFSibtngrp");
+    if (y.style.display === "none") {
+    y.style.display = "block";
+    } else {
+    y.style.display = "none";
+    }
+}
+
+function LH() {
+    var y = document.getElementById("LHbtngrp");
+    if (y.style.display === "none") {
+    y.style.display = "block";
+    } else {
+    y.style.display = "none";
+    }
+}

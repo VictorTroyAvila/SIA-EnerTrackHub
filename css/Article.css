@@ -216,7 +216,28 @@ body {
     height: 100%;
 }
 
-@media only screen and (max-width: 767px) {
+.options {
+    width: calc(100% / 12*9);
+    margin-left: 10%;
+}
+
+/* Font Spacing */
+.accordion {
+    margin-top: 10%;
+    width: 100%;
+    height: 4vh;
+}
+
+.btngrp {
+    display: none;
+}
+
+.stage {
+    width: 100%;
+    height: 3vh;
+}
+
+/* @media only screen and (max-width: 767px) {
     body {
         font-size: 10px;
     }
@@ -232,4 +253,4 @@ body {
     body {
         font-size: 22px;
     }
-}
+} */

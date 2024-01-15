@@ -162,13 +162,47 @@
     </button>
 
     <div class="accessabilityPanel" id="AP">
+        
+        <!-- Close Button -->
         <button class="accessClose" onclick="closeButton()">
             <img src="../SIA PICS/Close.png">
         </button>
-        <button class="fontSpacing"></button>
-        <button class="dyslexia"></button>
-        <button class="fontSize"></button>
+
+        <!-- Customizability -->
+        <div class="options">
+
+        <!-- Font Spacing -->
+        <button class="accordion" onclick="AFSp()">Spacing</button>
+        <div class="btngrp" id="AFSpbtngrp">
+        <button class="stage">Sp1</button>
+        <button class="stage">Sp2</button>
+        <button class="stage">Sp3</button>
+        </div>
+
+        <!-- Font Style -->
+        <button class="accordion" onclick="AD()">Dyslexia</button>
+        <div class="btngrp" id="ADbtngrp">
+        <button class="stage">D1</button>
+        <button class="stage">D2</button>
+        <button class="stage">D3</button>
+        </div>
+
+        <!-- Font Size -->
+        <button class="accordion" onclick="AFSi()">Font Size</button>
+        <div class="btngrp" id="AFSibtngrp">
+        <button class="stage">FSi1</button>
+        <button class="stage">FSi2</button>
+        <button class="stage">FSi3</button>
+        </div>
+        
+        <button class="accordion" onclick="LH()">Line Height</button>
+        <div class="btngrp" id="LHbtngrp">
+        <button class="stage">LH1</button>
+        <button class="stage">LH2</button>
+        <button class="stage">LH3</button>
+        </div>
+        </div>
     </div>
-    
+
 </body>
 </html>
