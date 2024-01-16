@@ -15,13 +15,19 @@ body, h1, h2, h3, p, ul, li {
     margin: 0 auto;
     padding: 20px;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   
   /* Footer styles */
   footer {
+    position: relative;
     background-color: #63D168; 
     font-family: "Inter", sans-serif;
+    margin-top: 10%;
     color: #fff;
-    padding: 20px 0;
   }
  
   .PageContainer, .ShortArticles, .smp, .SaS, .Contacts {

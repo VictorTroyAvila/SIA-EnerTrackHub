@@ -1,3 +1,3 @@
-function HUH() {
-    window.location.replace("https://www.w3schools.com")
+function Login() {
+    window.location.href = "../html/login.html";
 }
