@@ -65,3 +65,19 @@ function LH() {
     y.style.display = "none";
     }
 }
+
+function incrementValue()
+{
+    var i = 0;
+    function buttonClick() {
+        document.getElementById('inc').value = ++i;
+    }
+}
+
+function decrementValue()
+{
+    var i = 0;
+    function buttonClick() {
+        document.getElementById('inc').value = --i;
+    }
+}

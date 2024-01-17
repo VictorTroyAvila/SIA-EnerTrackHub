@@ -154,27 +154,87 @@
         </div>
     </div>
     </div>
+
+    <!-- Calculator -->
+    <div class="calcTitle">Calculating Annual Electricity Consumption and Costs</div>
+    <div class="ApplianceEnergyCalcu">
+        
+        <!-- appliance -->
+        <div class="appliance">
+            <img class="al" src="../SIA PICS/Bulb.png">
+            <h3>My Appliance</h3>
+            <span>Choices</span>
+            <div class="choices">
+                <button class="A1">Refrigerator</button>
+                <button class="A2">Air Conditioner</button>
+                <button class="A3">Television</button>
+            </div>
+        </div>
+        
+        <!-- wattage -->
+        <div class="wattage">
+            <img class="al" src="../SIA PICS/bolt.png">
+            <h3>Wattage</h3>
+            <form action="">
+            <input class="watts" type="text">
+            </form>
+        </div>
+        
+        <!-- utilityrate -->
+        <div class="utilityrate">
+            <img class="al" src="../SIA PICS/bill.png">
+            <h3>Utility Rate</h3>
+            <button class="in" onclick="incrementValue()"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue()"><img class="point" src="../SIA PICS/down.png"></button>
+            <input type="text" class="inp" id="kWh" value="0"></input>
+        </div>
+        
+        <!-- hoursperday -->
+        <div class="hoursperday">
+            <img class="al" src="../SIA PICS/clock.png">
+            <h3>Hours used per day</h3>
+            <button class="in" onclick="incrementValue()"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue()"><img class="point" src="../SIA PICS/down.png"></button>
+            <input type="text" class="inp" id="hPd" value="0"></input>
+        </div>
+        
+        <!-- daysperyear -->
+        <div class="daysperyear">
+            <img class="al" src="../SIA PICS/calendar.png">
+            <h3>Days used per year</h3>
+            <button class="in" onclick="incrementValue()"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue()"><img class="point" src="../SIA PICS/down.png"></button>
+            <input type="text" class="inp" id="dPy" value="0"></input>
+        </div>
+        
+        <!-- total -->
+        <div class="total">
+            <h2>ENERGY USE AND COST PER YEAR</h2>
+            <input type="text">
+        </div>
+
+    </div>
     
-    <!-- Footer -->
+    <!-- Footer
     <footer>
         <div class="foot">
             <div class="container">
             
                 <div class="row">
                     
-                    <!-- Copright -->
+                    Copright
                     <div class="copyright">
                     © Copyright 2023 WattWise. All rights reserved.
                     </div>
     
-                    <!-- Company Tag -->
+                    Company Tag
                     <div class="CompanyTag">
                         <img src="../SIA PICS/Blue Orange Minimalist Solar Energy Logo (1).png">
                         <div class="name">WattWise</div>
                         <div class="moto">Empower, Innovate, Transform</div>
                     </div>
                     
-                    <!-- Page container -->
+                    Page container
                     <div class="PageContainer1">
                         <div class="pages">Pages</div>
                         <div class="pHome"><a href="#">Home</a></div>
@@ -189,7 +249,7 @@
                     </div>
                     
                     
-                    <!-- Footer Articles -->
+                    Footer Articles
                     <div class="ShortArticles">
                         <div class="latestArticles">Latest Articles</div>
                         <div class="la1">Philippines - Oil & Gas</div>
@@ -197,7 +257,7 @@
                         <div class="la3">Oil and gas technology <br>Connectivity for higher <br>performance</div>
                     </div>
                     
-                    <!-- Social Media Platforms -->
+                    Social Media Platforms
                     <div class="smp">
                         <div class="socials">Social Media</div>
                         <img class="fb" src="../SIA PICS/fb.png">
@@ -206,14 +266,14 @@
                         <img class="yt" src="../SIA PICS/yt.png">
                     </div>
                     
-                    <!-- Service and Security -->
+                    Service and Security
                     <div class="SaS">
                         <div class="help">Help</div>
                         <div class="hPp">Private Policy</div>
                         <div class="hTc">Terms and Conditions</div>
                     </div>
                     
-                    <!-- Access -->
+                    Access
                     <div class="Contacts">
                         <div class="gIt">Get in Touch</div>
                     <div class="gtNo"><img src="../SIA PICS/tp.png">+1012 2356 789</div>
@@ -222,7 +282,7 @@
                     </div>
                 </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Accessability -->
     <button class="access" onclick="accessability()" id="accessButton">

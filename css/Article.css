@@ -168,6 +168,83 @@ body {
     height: 43.4%;
 }
 
+/* Calculator */
+.calcTitle {
+    margin-top: 20%;
+    margin-left: 25%;
+    font-size: 50px;
+}
+
+.ApplianceEnergyCalcu {
+    position: relative;
+    width: calc(100% / 12*6.5);
+    margin-top: 10%;
+    margin-left: 23%;
+    border: solid;
+}
+
+
+.ApplianceEnergyCalcu h3 {
+    margin-left: 5%;
+}
+
+.ApplianceEnergyCalcu span {
+    margin-left: 5%;
+}
+
+.al {
+    position: absolute;
+    width: 3%;
+}
+
+.point {
+    width: 40%;
+}
+
+.in {
+    margin-left: 93%;
+}
+
+.de {
+    margin-left: 93%;
+}
+
+.inp {
+    margin-left: 5%;
+}
+
+.appliance {
+    border: solid;
+}
+
+.choices {
+    display: none;
+}
+
+.wattage {
+    border: solid;
+}
+
+.watts {
+    margin-left: 5%;
+}
+
+.utilityrate {
+    border: solid;
+}
+
+.hoursperday {
+    border: solid;
+}
+
+.daysperyear {
+    border: solid;
+}
+
+.total {
+    border: solid;
+}
+
 /* Footer */
 .foot {
     position: relative;
@@ -194,7 +271,7 @@ body {
     width: calc(100% / 12*3);
     height: 98.2%;
     border-radius: 10px;
-    background-color:aliceblue;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(99,209,104,1) 0%, rgba(255,255,255,1) 100%);;
     display: none;
 }
 
