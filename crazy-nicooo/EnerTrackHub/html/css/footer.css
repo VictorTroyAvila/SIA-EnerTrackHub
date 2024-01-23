@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.wattWise {
+  margin-top: -10%;
+  margin-left: 25%;
+}
+
+.footer {
+  background: #63D168;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Adjust for smaller screens */
+  gap: 20px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr); /* Adjust for medium-sized screens like tablets */
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer {
+    grid-template-columns: repeat(5, 1fr); /* Adjust for larger screens like computers */
+  }
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.copyright {
+  background: #63D168;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .section a i.fab,
+.footer .section a i.fas {
+  color: black;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .footer .section a i.fab,
+  .footer .section a i.fas {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer .section a i.fab,
+  .footer .section a i.fas {
+    font-size: 30px;
+  }
+}
