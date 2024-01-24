@@ -1,0 +1,27 @@
+.google-map {
+    padding-bottom: -10%;
+    position: center;
+}
+
+.google-map iframe {
+    width: 1800px;
+    height: 733px;
+    left: 0;
+    top: 0;
+    position: center;
+}
+
+.additional-content2 {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 100px;
+    
+    
+  }
+  
+  .additional-content p {
+    color: #000000;
+    margin-bottom: 90px;
+  }
+ 
+  
