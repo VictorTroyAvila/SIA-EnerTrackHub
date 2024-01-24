@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>What is renewable energy, and why is it important?</h3>
+        </div>
+        <div class="acc-content">
+            <p>Renewable energy is derived from naturally replenishing sources such as sunlight, wind, and water. It is important because it provides a sustainable and clean alternative to traditional fossil fuels, reducing environmental impact and combating climate change.</p>
+        </div>
+    </div>
+    
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>How can I reduce my energy consumption at home or in my business?</h3>
+        </div>
+        <div class="acc-content">
+            <p>You can reduce energy consumption by using energy-efficient appliances, optimizing heating and cooling systems, adopting LED lighting, and practicing mindful energy use in daily activities.</p>
+        </div>
+    </div>
+    
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>What are the benefits of using solar energy for power generation?</h3>
+        </div>
+        <div class="acc-content">
+            <p>Solar energy is a clean, abundant source that reduces greenhouse gas emissions, lowers electricity bills, requires minimal maintenance, and contributes to a more sustainable energy future.</p>
+        </div>
+    </div>
+    
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>How does energy efficiency impact cost savings in households and businesses?</h3>
+        </div>
+        <div class="acc-content">
+            <p>Energy efficiency measures, such as upgrading insulation, using energy-efficient appliances, and implementing smart technologies, lead to reduced energy consumption, resulting in lower utility bills and long-term cost savings.</p>
+        </div>
+    </div>
+    
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>What are the different types of renewable energy sources available?</h3>
+        </div>
+        <div class="acc-content">
+            <p>Common renewable energy sources include solar, wind, hydroelectric, geothermal, and biomass. Each source harnesses natural processes to generate clean, sustainable power.</p>
+        </div>
+    </div>
+    
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>How can I transition to clean energy for my home or business?</h3>
+        </div>
+        <div class="acc-content">
+            <p>Transition to clean energy by installing solar panels, exploring wind energy options, using energy-efficient technologies, and considering green energy providers for a more sustainable energy mix.</p>
+        </div>
+    </div>
+    
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>Are there government incentives or rebates available for adopting renewable energy solutions?</h3>
+        </div>
+        <div class="acc-content">
+            <p>Many governments offer incentives such as tax credits, rebates, and feed-in tariffs to encourage the adoption of renewable energy technologies, making them more accessible and cost-effective.</p>
+        </div>
+    </div>
+    
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>What are some common myths or misconceptions about renewable energy?</h3>
+        </div>
+        <div class="acc-content">
+            <p>Common myths include beliefs that renewable energy is too expensive, unreliable, or requires vast land use. In reality, advancements have made renewable energy cost-effective, reliable, and environmentally friendly.</p>
+        </div>
+    </div>
+    
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>How do I calculate my carbon footprint, and how can I offset it?</h3>
+        </div>
+        <div class="acc-content">
+            <p>Calculate your carbon footprint by assessing your energy use, transportation, and lifestyle choices. To offset it, invest in carbon offset projects, support renewable energy initiatives, or participate in tree-planting programs.</p>
+        </div>
+    </div>
+    
+    <div class="acc-container" onclick="accMove(this)">
+        <div class="acc-title">
+            <img src="Ellipse.png" alt="Dropdown Icon" class="dropdown-icon">
+            <h3>What are some emerging technologies in the energy sector that promote sustainability?</h3>
+        </div>
+        <div class="acc-content">
+            <p>Emerging technologies include advanced energy storage, smart grids, electric vehicles, and artificial intelligence applications, all contributing to more efficient and sustainable energy systems.</p>
+        </div>
+    </div>
+    
+    <!-- Add more accordion containers as needed -->
+
+    <script>
+        function accMove(element) {
+            element.classList.toggle("active");
+            var content = element.querySelector(".acc-content");
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+    </script>
+</body>
+</html>
