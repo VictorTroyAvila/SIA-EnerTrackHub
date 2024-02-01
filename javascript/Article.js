@@ -152,17 +152,20 @@ function applianceChoices(clicked)
     });
 }
 
-function enter() {
-    var input = document.getElementById("kWh");
+
+
+// Enter Event Listener
+// function enter() {
+//     var input = document.getElementById("kWh");
     
-    input.addEventListener("keypress", function(event) {
-        if (event.key == "Enter") {
-        event.preventDefault();
-        input.value = '';
-        }
-        else
-        {
-            input.value = 'did not work';
-        }
-});
-}
+//     input.addEventListener("keypress", function(event) {
+//         if (event.key == "Enter") {
+//         event.preventDefault();
+//         input.value = '';
+//         }
+//         else
+//         {
+//             input.value = 'did not work';
+//         }
+// });
+// }
