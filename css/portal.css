@@ -12,7 +12,7 @@ body {
 .logo {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 20px;
     max-width: 150px;
     height: auto;
    
@@ -29,19 +29,29 @@ body {
     margin-right: 10px; 
 }
 
-.additional-logo {
-    margin-left: 2px;
-    width: 150px; 
-    height: 60px; 
-}
+.logo h2 {
+    font-size: 27px;
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+    position: relative;
+    left: 20px;
+  }
 
 .navbar {
     position:absolute;
     overflow: hidden;
     top: calc(100% + 20px); 
     right: 1%;
+    margin-right: 5px;
 }
 
+.navbar {
+    position: absolute;
+    overflow: hidden;
+    top: 10px;
+    right: 1%;
+}
 
 .navbar a {
     float: right;
@@ -51,21 +61,23 @@ body {
     padding: 14px 20px;
     text-decoration: none;
     font-size: 15px;
-
-}
-
-.navbar {
-    position: absolute;
-    overflow: hidden;
-    top: 10px;
-    right: 1%;
-     
+    margin-right: 20px;
+    position: relative;
 }
 
 .navbar a:hover {
-    background-color: #ddd;
+    color: #ddd;
 }
 
+.navbar a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #ddd; 
+}
 
 img {
     position: relative;
@@ -91,7 +103,7 @@ img {
     font-size: large;
     color: white;
     left: 5%;
-    top: 50%;
+    top: 45%;
     font-size: 60px;
     font-family: monospace;
 }
@@ -101,7 +113,7 @@ img {
     font-size: large;
     color: white;
     left: 5%;
-    top: 70%;
+    top: 58%;
     font-size: 20px;
     font-family: monospace;
 }
@@ -110,13 +122,14 @@ img {
     text-align: center;
     padding: 20px;
     background-color: #f4f4f4; 
+    margin-top: 50px;
+    margin-bottom: 100px; 
 }
 
 .additional-content p {
-    color: #333; 
+    color: #070707;
+     
 }
-
-
 
 .gridCat {
 
@@ -143,7 +156,7 @@ img {
     display: flex;
     align-items: center; 
     margin-top: 13px;
-    margin-right: 20px; 
+    margin-right: -10px; 
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -181,9 +194,6 @@ img {
 #loginButton:hover {
     background-color: #046D45; 
 }
-
-
-
 .content1,
 .content2 {
     display: flex;
@@ -192,11 +202,11 @@ img {
     margin-left: 20px;
     margin-right: 20px;
 }
-
 .content1 img{
     max-width: 40%;
     height: auto;
-    margin-right: 90px; 
+    margin-right: 95px;
+    margin-left: 50px; 
 
 }
 .content2 img {
@@ -205,87 +215,85 @@ img {
     margin-left: 90px;
 }
 
-
 .content1 img {
     order: 1; 
 }
-
 .content1 div {
     margin-top: 80px;
     order: 2; 
     margin-left: 5px; 
 }
-
 .content2 {
     margin-top: 80px;
     margin-right: 50px;
 
 }
 
-
 .content2 img {
-    order: 2; 
+    order: 2;
+    margin-left: 108px; 
 }   
-
 .content2 div{
     order: 1;
-    margin-left: 75px;
+    margin-left: 137px;
 }
-
 .slideshow-container {
-    max-width: 100%;
+    max-width: 200%;
     overflow: hidden;
     position: relative;
 }
-
 .mySlides {
     display: none;
 }
-
-
 .video-container {
     max-height: 600px;
     margin: 50px auto; 
     border: 70px solid #dddddd00;
-    background-color: #6fda98d7; 
+    background-color: #63D1683D; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 video {
     width: 50%;
     height: 50%;
     object-fit: cover;
 }
-
 .w3-button {
-    position: absolute;
-    margin-top: 20px;
-    transform: translateY(-50%);
-    font-size: 48px; 
-    background-color: #ddd;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    margin: 0;
+    
+      
 }
 
-.w3-display-left {
-    margin-left: 280px; 
-}
-
+.w3-display-left,
 .w3-display-right {
-    margin-right: 280px; 
-}
-
-.buttonreadmore {
-    color: #04AA6D; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px 20px;
+    margin-left: 300px; 
+    margin-right: 300px;
+    margin-top: -110px;
+   
 }
 
 .content3,
+.content4 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 148px;
+    margin-right: 20px;
+    margin-top: -150px;
+}
+
+/*Di pa tapos*/
+.content4 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 148px;
+    margin-right: 20px;
+    margin-top: -150px;
+    overflow-y: auto; /* I-add ang line na ito para magkaruon ng scrollbar */
+}
+/*Content 4 Image and content*/
 .content4 {
     display: flex;
     align-items: center;
@@ -294,15 +302,60 @@ video {
     margin-right: 20px;
 }
 
-.content3 img{
-    max-width: 40%;
+.content4 img {
+    max-width: 30%;
     height: auto;
-    margin-right: 90px; 
+    margin-left: 90px;
+}
+.content4 {
+    margin-top: 80px;
+    margin-right: 50px;
 
 }
 
+.content4 img {
+    order: 2;
+    margin-left: 108px; 
+}   
+.content4 div{
+    order: 1;
+    margin-left: 137px;
+}
+/*Content 4 Image and Content*/
+.content4 p {
+    max-height: 215.002px;
+    overflow-y: auto;
+    margin-left: 20px;
+    position: relative;
+}
 
+.content4 p::-webkit-scrollbar,
+.content4 p::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
 
+.content4 p::-webkit-scrollbar-thumb,
+.content4 p::-webkit-scrollbar-thumb {
+    background-color: #63D168;
+}
+
+.content4 p::-webkit-scrollbar-track,
+.content4 p::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/*Di pa tapos end*/
+
+.content3 img{
+    max-width: 40%;
+    height: auto;
+    margin-right: 90px;
+    margin-top: -68px; 
+
+}
 .slideshow-container {
     max-width: 100%;
     overflow: hidden;
@@ -312,39 +365,64 @@ video {
 .mySlides {
     display: none;
 }
-
-
 .video-container {
     max-height: 600px;
     margin: 50px auto; 
     border: 70px solid #dddddd00;
-    background-color: #6fda98d7; 
+    background-color: #63D1683D; 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 300px;
 }
-
 video {
     width: 50%;
     height: 50%;
     object-fit: cover;
 }
-
-.w3-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 48px; 
-    background-color: #ddd;
-    border: none;
-    padding: 10px;
+.read-more-button {
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    border: 2px solid #63D168;
     cursor: pointer;
+    margin: 50px;
+    transition: border-color 0.3s ease; 
+    margin-right: 100px;
+    margin-left: 5px;
+}
+.read-more-button:active {
+    border-color: black; 
+}
+.content1 p,
+.content2 p,
+.content3 p {
+    overflow-y: auto;
+    max-height: 215.002px; 
+    margin-left: 20px; 
+    position: relative; 
+}
+.content1 p::-webkit-scrollbar,
+.content2 p::-webkit-scrollbar,
+.content3 p::-webkit-scrollbar {
+    width: 5px;
+    height: 100%; 
+    position: absolute; 
+    left: 0;
 }
 
-.w3-display-left {
-    margin-left: 280px; 
+.content1 p::-webkit-scrollbar-thumb,
+.content2 p::-webkit-scrollbar-thumb,
+.content3 p::-webkit-scrollbar-thumb {
+    background-color: #63D168; 
 }
 
-.w3-display-right {
-    margin-right: 280px; 
+.content1 p::-webkit-scrollbar-track,
+.content2 p::-webkit-scrollbar-track,
+.content3 p::-webkit-scrollbar-track {
+    background-color: transparent; 
 }
+
+
