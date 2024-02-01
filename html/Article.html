@@ -157,17 +157,21 @@
 
     <!-- Calculator -->
     <div class="calcTitle">Calculating Annual Electricity Consumption and Costs</div>
-    <div class="ApplianceEnergyCalcu">
+    <div class="applianceEnergyCalcu">
         
         <!-- appliance -->
         <div class="appliance">
             <img class="al" src="../SIA PICS/Bulb.png">
             <h3>My Appliance</h3>
-            <span>Choices</span>
-            <div class="choices">
-                <button class="A1">Refrigerator</button>
-                <button class="A2">Air Conditioner</button>
-                <button class="A3">Television</button>
+            <button class="choice" onclick="APPLCS()">Choices</button>
+            <input type="text" class="apl" id="apl" value=''></input>
+            <div class="choices" id="choices">
+                <button onclick="applianceChoices(this.id)" id="Refrigerator">Refrigerator</button>
+                <button onclick="applianceChoices(this.id)" id="Air Conditioner">Air Conditioner</button>
+                <button onclick="applianceChoices(this.id)" id="Television">Television</button>
+                <button onclick="applianceChoices(this.id)" id="Blender">Blender</button>
+                <button onclick="applianceChoices(this.id)" id="Microwave">Microwave</button>
+                <button onclick="applianceChoices(this.id)" id="Oven">Oven</button>
             </div>
         </div>
         
@@ -176,7 +180,7 @@
             <img class="al" src="../SIA PICS/bolt.png">
             <h3>Wattage</h3>
             <form action="">
-            <input class="watts" type="text">
+            <input class="inp" id="wtz" type="text" value="">
             </form>
         </div>
         
@@ -184,33 +188,33 @@
         <div class="utilityrate">
             <img class="al" src="../SIA PICS/bill.png">
             <h3>Utility Rate</h3>
-            <button class="in" onclick="incrementValue()"><img class="point" src="../SIA PICS/up.png"></button>
-            <button class="de" onclick="decrementValue()"><img class="point" src="../SIA PICS/down.png"></button>
-            <input type="text" class="inp" id="kWh" value="0"></input>
+            <input type="text" class="inp" id="kWh" value="11.43"></input>
+            <button class="in" onclick="incrementValue()" id="inUR"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue()" id="deUR"><img class="point" src="../SIA PICS/down.png"></button>
         </div>
         
         <!-- hoursperday -->
         <div class="hoursperday">
             <img class="al" src="../SIA PICS/clock.png">
             <h3>Hours used per day</h3>
-            <button class="in" onclick="incrementValue()"><img class="point" src="../SIA PICS/up.png"></button>
-            <button class="de" onclick="decrementValue()"><img class="point" src="../SIA PICS/down.png"></button>
-            <input type="text" class="inp" id="hPd" value="0"></input>
+            <input type="text" class="inp" id="hPd" value="1"></input>
+            <button class="in" onclick="incrementValue()" id="inHPD"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue()" id="deHPD"><img class="point" src="../SIA PICS/down.png"></button>
         </div>
         
         <!-- daysperyear -->
         <div class="daysperyear">
             <img class="al" src="../SIA PICS/calendar.png">
             <h3>Days used per year</h3>
-            <button class="in" onclick="incrementValue()"><img class="point" src="../SIA PICS/up.png"></button>
-            <button class="de" onclick="decrementValue()"><img class="point" src="../SIA PICS/down.png"></button>
-            <input type="text" class="inp" id="dPy" value="0"></input>
+            <input type="text" class="inp" id="dPy" value="1"></input>
+            <button class="in" onclick="incrementValue()" id="inDPY"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue()" id="deDPY"><img class="point" src="../SIA PICS/down.png"></button>
         </div>
         
         <!-- total -->
         <div class="total">
             <h2>ENERGY USE AND COST PER YEAR</h2>
-            <input type="text">
+            <input type="text" class="inp2" id="ttl" value="0">
         </div>
 
     </div>
