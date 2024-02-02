@@ -102,7 +102,7 @@ function calcTotal() {
 
     var days = +document.getElementById('dPy').value;
 
-    var product = watts * utilityRate * hrs * days;
+    var product = (watts * utilityRate * hrs * days)/1000;
 
     total.value = product + " php/yr";
 }
@@ -169,3 +169,28 @@ function applianceChoices(clicked)
 //         }
 // });
 // }
+
+function incrementValue(clicked) {
+    document.getElementById(clicked).addEventListener('click', function() {
+        
+        if (clicked == 'inUR')
+        {
+            document.getElementById('kWh').value++;
+            calcTotal()
+        }
+        else if (clicked == 'inHPD')
+        {
+            document.getElementById('hPd').value++;
+            calcTotal()
+        }
+        else if (clicked == 'inDPY')
+        {
+            document.getElementById('dPy').value++;
+            calcTotal()
+        }
+    });
+}
+
+function decrementValue() {
+
+}

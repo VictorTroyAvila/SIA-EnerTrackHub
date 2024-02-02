@@ -6,6 +6,10 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+footer {
+    margin-top: 10%;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -297,19 +301,13 @@ body {
 
 .total {
     border: solid;
-    height: 10vh;
+    height: 12vh;
 }
 
 .total h2 {
     font-size: 40px;
     text-align: center;
-}
-
-/* Footer */
-.foot {
-    position: relative;
-    width: 100%;
-    height: fit-content;
+    margin-top: 1%;
 }
 
 /* Accessabilities */

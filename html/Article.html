@@ -189,8 +189,8 @@
             <img class="al" src="../SIA PICS/bill.png">
             <h3>Utility Rate</h3>
             <input type="text" class="inp" id="kWh" value="11.43"></input>
-            <button class="in" onclick="incrementValue()" id="inUR"><img class="point" src="../SIA PICS/up.png"></button>
-            <button class="de" onclick="decrementValue()" id="deUR"><img class="point" src="../SIA PICS/down.png"></button>
+            <button class="in" onclick="incrementValue(this.id)" id="inUR"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue(this.id)" id="deUR"><img class="point" src="../SIA PICS/down.png"></button>
         </div>
         
         <!-- hoursperday -->
@@ -198,8 +198,8 @@
             <img class="al" src="../SIA PICS/clock.png">
             <h3>Hours used per day</h3>
             <input type="text" class="inp" id="hPd" value="1"></input>
-            <button class="in" onclick="incrementValue()" id="inHPD"><img class="point" src="../SIA PICS/up.png"></button>
-            <button class="de" onclick="decrementValue()" id="deHPD"><img class="point" src="../SIA PICS/down.png"></button>
+            <button class="in" onclick="incrementValue(this.id)" id="inHPD"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue(this.id)" id="deHPD"><img class="point" src="../SIA PICS/down.png"></button>
         </div>
         
         <!-- daysperyear -->
@@ -207,8 +207,8 @@
             <img class="al" src="../SIA PICS/calendar.png">
             <h3>Days used per year</h3>
             <input type="text" class="inp" id="dPy" value="1"></input>
-            <button class="in" onclick="incrementValue()" id="inDPY"><img class="point" src="../SIA PICS/up.png"></button>
-            <button class="de" onclick="decrementValue()" id="deDPY"><img class="point" src="../SIA PICS/down.png"></button>
+            <button class="in" onclick="incrementValue(this.id)" id="inDPY"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue(this.id)" id="deDPY"><img class="point" src="../SIA PICS/down.png"></button>
         </div>
         
         <!-- total -->
@@ -219,74 +219,68 @@
 
     </div>
     
-    <!-- Footer
+    <!-- Footer -->
     <footer>
-        <div class="foot">
-            <div class="container">
-            
-                <div class="row">
-                    
-                    Copright
-                    <div class="copyright">
-                    © Copyright 2023 WattWise. All rights reserved.
-                    </div>
-    
-                    Company Tag
-                    <div class="CompanyTag">
-                        <img src="../SIA PICS/Blue Orange Minimalist Solar Energy Logo (1).png">
-                        <div class="name">WattWise</div>
-                        <div class="moto">Empower, Innovate, Transform</div>
-                    </div>
-                    
-                    Page container
-                    <div class="PageContainer1">
-                        <div class="pages">Pages</div>
-                        <div class="pHome"><a href="#">Home</a></div>
-                        <div class="pArticle"><a href="#">Article</a></div>
-                        <div class="pTools"><a href="#">Tools</a></div>
-                    </div>
-                    
-                    <div class="PageContainer2">
-                        <div class="pGuide"><a href="#">Guide</a></div>
-                        <div class="pAboutUs"><a href="#">About Us</a></div>
-                        <div class="pContactUs"><a href="#">Contact Us</a></div>
-                    </div>
-                    
-                    
-                    Footer Articles
-                    <div class="ShortArticles">
-                        <div class="latestArticles">Latest Articles</div>
-                        <div class="la1">Philippines - Oil & Gas</div>
-                        <div class="la2">Top Technologies <br>Transforming Energy in 2021</div>
-                        <div class="la3">Oil and gas technology <br>Connectivity for higher <br>performance</div>
-                    </div>
-                    
-                    Social Media Platforms
-                    <div class="smp">
-                        <div class="socials">Social Media</div>
-                        <img class="fb" src="../SIA PICS/fb.png">
-                        <img class="ig" src="../SIA PICS/ig.png">
-                        <img class="twtr" src="../SIA PICS/twtr.png">
-                        <img class="yt" src="../SIA PICS/yt.png">
-                    </div>
-                    
-                    Service and Security
-                    <div class="SaS">
-                        <div class="help">Help</div>
-                        <div class="hPp">Private Policy</div>
-                        <div class="hTc">Terms and Conditions</div>
-                    </div>
-                    
-                    Access
-                    <div class="Contacts">
-                        <div class="gIt">Get in Touch</div>
-                    <div class="gtNo"><img src="../SIA PICS/tp.png">+1012 2356 789</div>
-                    <div class="gtEmail"><img src="../SIA PICS/em.png">iapply@pup.edu.ph</div>
-                    <div class="gtAdrs">873H+C88, Biñan, Laguna</div>
-                    </div>
-                </div>
-        </div>
-    </footer> -->
+        <div class="container">
+     
+         <div class="row">
+     
+         <!-- Company Tag -->
+         <div class="CompanyTag">
+         <img src="../SIA PICS/Blue Orange Minimalist Solar Energy Logo (1).png">
+         <div class="name">WattWise</div>
+         <div class="moto">Empower, Innovate, Transform</div>
+         </div>
+     
+         <!-- Page container -->
+         <div class="PageContainer1">
+         <div class="pages">Pages</div>
+         <div class="pHome">Home</div>
+         <div class="pArticle">Article</div>
+         <div class="pTools">Tools</div>
+         </div>
+     
+         <div class="PageContainer2">
+             <div class="pGuide">Guide</div>
+             <div class="pAboutUs">About Us</div>
+             <div class="pContactUs">Contact Us</div>
+             </div>
+         
+     
+         <!-- Footer Articles -->
+         <div class="ShortArticles">
+         <div class="latestArticles">Latest Articles</div>
+         <div class="la1">Philippines - Oil & Gas</div>
+         <div class="la2">Top Technologies <br>Transforming Energy in 2021</div>
+         <div class="la3">Oil and gas technology <br>Connectivity for higher <br>performance</div>
+         </div>
+     
+         <!-- Social Media Platforms -->
+         <div class="smp">
+             <div class="socials">Social Media</div>
+             <img class="fb" src="..\SIA PICS\fb.png">
+             <img class="ig" src="..\SIA PICS\ig.png">
+             <img class="twtr" src="..\SIA PICS\twtr.png">
+             <img class="yt" src="..\SIA PICS\yt.png">
+         </div>
+     
+         <!-- Service and Security -->
+         <div class="SaS">
+         <div class="help">Help</div>
+         <div class="hPp">Private Policy</div>
+         <div class="hTc">Terms and Conditions</div>
+         </div>
+     
+         <!-- Access -->
+         <div class="Contacts">
+         <div class="gIt">Get in Touch</div>
+         <div class="gtNo"><img src="..\SIA PICS\tp.png">+1012 2356 789</div>
+         <div class="gtEmail"><img src="..\SIA PICS\em.png">iapply@pup.edu.ph</div>
+         <div class="gtAdrs">873H+C88, Biñan, Laguna</div>
+         </div>
+     </div>
+     </div>
+     </footer>
 
     <!-- Accessability -->
     <button class="access" onclick="accessability()" id="accessButton">
