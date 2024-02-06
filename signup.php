@@ -1,3 +1,24 @@
+<?php
+include('dbconfig.php');
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['user_signin'])) {
+    $firstname = $_POST['first-name'];
+    $lastname = $_POST['last-name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "INSERT INTO user (firstName, lastName, email, password) VALUES ('$firstname', '$lastname', '$email', '$password')";
+
+    if ($conn->query($sql) === TRUE) {
+        header('location: login.php');
+        exit();
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +42,7 @@
             Sign Up for a Sustainable Future
         </div>
         <div class="signup-container">
-            <form class="signup-form" action="../html/php/db_connection.php" method="post">
+            <form class="signup-form" action="" method="POST">
                 <h4>Sign Up</h4>
                 <div class="name-inputs">
                     <div class="input-group">
@@ -44,21 +65,21 @@
                 </label>
 
                 <div class="password-input-container">
-                    <input type="password"class="password-input" id="password" name="password" required>
+                    <input type="password" class="password-input" id="password" name="password" required>
                     <p class="password-requirements">Use 8 or more characters with a mix of letters, numbers & symbols</p>
                 </div>
 
                 <div class="checkbox-group">
-                    <input type="checkbox"name="terms-checkbox" required>
+                    <input type="checkbox" name="terms-checkbox" required>
                     <label for="terms-checkbox">By creating an account, I agree to our <a href="#" class="condition">Terms of use</a> and <a href="#" class="condition">Privacy Policy</a></label>
                 </div>
 
                 <div class="checkbox-group">
-                    <input type="checkbox"name="sms-checkbox">
+                    <input type="checkbox" name="sms-checkbox">
                     <label for="sms-checkbox">By creating an account, I am also consenting to receive SMS messages and emails, including product new feature updates, events, and marketing promotions.</label>
                 </div>
 
-                <button type="submit" class="submit">Sign up</button>
+                <button type="submit" class="submit" name="user_signin">Sign up</button>
 
                 <div class="additional-info">
                     Already have an account? <a href="../html/login.html" class="condition">Log in</a>

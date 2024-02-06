@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnerTrackHub</title>
-    <link rel="stylesheet" href="/SIA-EnerTrackHub/css/signup.css">
+    <title>WattWise</title>
+    <link rel="stylesheet" href="..css/signup.css">
 </head>
 
 <body>
     <header>
         <div>
-            <img src="/SIA-EnerTrackHub/SIA PICS/logo.png" alt="Logo">
-            <h1>EnerTrackHub</h1>
+            <img src="../html//logo.png" alt="Logo">
+            <h1>WattWise</h1>
         </div>
         <a href="#">Log in</a>
     </header>
@@ -21,7 +21,7 @@
             Sign Up for a Sustainable Future
         </div>
         <div class="signup-container">
-            <form class="signup-form">
+            <form class="signup-form" action="db_connection.php" method="post">
                 <h4>Sign Up</h4>
                 <div class="name-inputs">
                     <div class="input-group">
@@ -39,7 +39,7 @@
 
                 <label for="password" class="password-label">Password
                     <div class="password-toggle" onclick="togglePasswordVisibility()">
-                        <img src="/SIA-EnerTrackHub/SIA PICS/eye-on.png">
+                        <img src="../html/-on.png">
                     </div>
                 </label>
 
@@ -61,7 +61,7 @@
                 <button type="submit" class="submit">Sign up</button>
 
                 <div class="additional-info">
-                    Already have an account? <a href="login.html" class="condition">Log in</a>
+                    Already have an account? <a href="../html/login.html" class="condition">Log in</a>
                 </div>
             </form>
         </div>
@@ -74,10 +74,10 @@
 
             if (passwordInput.type === "password") {
                 passwordInput.type = "text";
-                passwordToggle.src = "/SIA-EnerTrackHub/SIA PICS/eye-off.png";
+                passwordToggle.src = "images/eye-off.png";
             } else {
                 passwordInput.type = "password";
-                passwordToggle.src = "/SIA-EnerTrackHub/SIA PICS/eye-on.png";
+                passwordToggle.src = "images/eye-on.png";
             }
         }
     </script>
