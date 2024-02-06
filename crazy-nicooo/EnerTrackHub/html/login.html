@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WattWise</title>
+    <link rel="stylesheet" href="../html/css/login.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../html/images/logo.png" alt="Logo">
+            <h1>WattWise</h1>
+        </div>
+        <a href="#">Go</a>
+    </header>
+    <div class="container">
+        <div class="left-container">
+            Log In for a Sustainable Future
+        </div>
+        <div class="login-container">
+            <form class="login-form" action="../html/database/login_process.php" method="POST">
+                <h4>Log In</h4>
+                <label for="username" class="username-label">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+
+                <label for="password" class="password-label">Password
+                    <div class="password-toggle" onclick="togglePasswordVisibility()">
+                        <img src="../html/images/eye-on.png">
+                    </div>
+                </label>
+
+                <div class="password-input-container">
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+
+                <button type="submit" id="login-btn" class="btn">Log in</button>
+                <p class="error-message" id="error-message" style="text-align: center;"></p>
+
+                <div class="additional-info">
+                    By continuing, you agree to the <a href="#" class="condition">Terms of use</a> and <a href="#" class="condition">Privacy Policy</a>. 
+                    <br>
+                    <br>
+                    <br>
+                    <span class="span">
+                        <a href="#" class="issue">Other issue with sign in?</a>
+                        <a href="#" class="forget">Forget your password</a>
+                    </span>
+                </div>
+
+                <div class="additional-info2">
+                    <button class="create-account" onclick="redirectToSignup()">Create Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            var passwordToggle = document.querySelector(".password-toggle img");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordToggle.src = "images/eye-off.png";
+            } else {
+                passwordInput.type = "password";
+                passwordToggle.src = "images/eye-on.png";
+            }
+        }
+
+        function redirectToSignup() {
+            window.location.href = "../html/signup.html";
+        }
+
+        function redirectToUser() {
+            window.location.href = "../html/user_profile.html";
+        }
+    </script>
+</body>
+</html>
