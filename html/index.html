@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <section class="main">
+      <section class="hero">
+        <header>
+          <div class="nav-bar">
+            <img src="../SIA PICS/taaslogo.png" alt="logo" />
+            <h4>WattWise</h4>
+          </div>
+          <ul>
+            <li>Home</li>
+            <li>Portal</li>
+            <li>Article</li>
+            <li>Profiles</li>
+            <li>Product</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+          </ul>
+          <button>Log In</button>
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+            ></path>
+          </svg>
+        </header>
+        <div class="hero-wrapper">
+          <h1>WattWise</h1>
+          <h3>Your Energy Companion</h3>
+          <p>
+            Explore sustainable practices, manage your energy usage, and stay
+            updated with the latest innovations for a greener future.
+          </p>
+        </div>
+      </section>
+      <div class="prod-cat">
+        <h2>Product Catalogue</h2>
+        <p>
+          Explore our comprehensive product catalog, featuring cutting-edge
+          solutions designed to elevate your energy efficiency and
+          sustainability. From smart appliances to eco-friendly gadgets, each
+          item is curated to bring innovation and a greener future into your
+          life.
+        </p>
+        <div class="floater">
+          <div>
+            <h3>Energy Tips!</h3>
+            <HiLightBulb />
+          </div>
+          <p>
+            Organize items inside the refrigerator to allow for proper air
+            circulation. Avoid overcrowding, as this can hinder the unit's
+            efficiency.
+          </p>
+        </div>
+      </div>
+      <div class="prod-series">
+        <h2>ENERGY EFFICIENT APPLIANCES</h2>
+        <div class="myfav-btn" onclick="toMyFav()">
+          <h5>My Favorites</h5>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path
+              d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"
+            ></path>
+          </svg>
+        </div>
+        <div class="myfav">
+          <div class="fav1">
+            <div class="title">
+              <h1>My Favourite</h1>
+              <svg
+                class="close"
+                onclick="toClose()"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19.002 3h-14c-1.103 0-2 .897-2 2v4h2V5h14v14h-14v-4h-2v4c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.898-2-2-2z"
+                ></path>
+                <path d="m11 16 5-4-5-4v3.001H3v2h8z"></path>
+              </svg>
+            </div>
+            <div class="fav-list">
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <section class="ref">
+        <div class="ref-img">
+          <img src="../SIA PICS/ref.png" alt="" />
+          <div class="ref-wrapper">
+            <button class="shop">
+              <h5>Visit shop</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.999 8a.997.997 0 0 0-.143-.515L19.147 2.97A2.01 2.01 0 0 0 17.433 2H6.565c-.698 0-1.355.372-1.714.971L2.142 7.485A.997.997 0 0 0 1.999 8c0 1.005.386 1.914 1 2.618V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.382c.614-.704 1-1.613 1-2.618zm-2.016.251A2.002 2.002 0 0 1 17.999 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.219 4h2.214l2.55 4.251zm-9.977-.186L10.818 4h2.361l.813 4.065C13.957 9.138 13.079 10 11.999 10s-1.958-.862-1.993-1.935zM6.565 4h2.214l-.76 3.804.02.004c-.015.064-.04.124-.04.192 0 1.103-.897 2-2 2a2.002 2.002 0 0 1-1.984-1.749L6.565 4zm3.434 12h-4v-3h4v3z"
+                ></path>
+              </svg>
+            </button>
+            <button class="fav" onclick="addRef()">
+              <h5>Add to Favorites</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ref-details">
+          <h2>Hanabishi Double Door Refrigerator</h2>
+          <p>
+            Experience optimal freshness and convenience with the Hanabishi
+            Double Door Refrigerator. This stylish and spacious appliance
+            combines modern design with advanced cooling technology, ensuring
+            your groceries stay fresh for longer. With adjustable shelves,
+            energy-efficient LED lighting, and a sleek stainless steel finish,
+            this refrigerator seamlessly blends functionality and aesthetics.
+            Elevate your kitchen with the reliability and performance of the
+            Hanabishi Double Door Refrigerator.
+          </p>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Energy Saving
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Saves up to 40% electricity
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Unit dimension: 545x595x1417mm
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Mechanical Temperature Control
+          </div>
+        </div>
+      </section>
+      <section class="ref">
+        <div class="ref-img aircon1">
+          <img src="../SIA PICS/aircon1.png" alt="" />
+          <div class="ref-wrapper">
+            <button class="shop">
+              <h5>Visit shop</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.999 8a.997.997 0 0 0-.143-.515L19.147 2.97A2.01 2.01 0 0 0 17.433 2H6.565c-.698 0-1.355.372-1.714.971L2.142 7.485A.997.997 0 0 0 1.999 8c0 1.005.386 1.914 1 2.618V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.382c.614-.704 1-1.613 1-2.618zm-2.016.251A2.002 2.002 0 0 1 17.999 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.219 4h2.214l2.55 4.251zm-9.977-.186L10.818 4h2.361l.813 4.065C13.957 9.138 13.079 10 11.999 10s-1.958-.862-1.993-1.935zM6.565 4h2.214l-.76 3.804.02.004c-.015.064-.04.124-.04.192 0 1.103-.897 2-2 2a2.002 2.002 0 0 1-1.984-1.749L6.565 4zm3.434 12h-4v-3h4v3z"
+                ></path>
+              </svg>
+            </button>
+            <button class="fav" onclick="addAircon1()">
+              <h5>Add to Favorites</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ref-details">
+          <h2>Condura Window Type Inverter Air Conditioner</h2>
+          <p>
+            Elevate your indoor comfort with the Condura Window Room Inverter
+            Air Conditioner. Designed for efficiency and cooling precision, this
+            appliance brings a blend of powerful performance and energy-saving
+            technology. With its inverter technology, it ensures consistent
+            cooling while optimizing energy consumption. Easy to install and
+            equipped with smart features, the Condura Window Room Inverter is a
+            reliable choice for a cool and comfortable living space.
+          </p>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Energy-Efficient. Low Energy Consumption
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            4 Way Air Flow Cooling
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Clean Indoor Air with Anti-Bacterial Filter
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Dimension: 560 x 375 x 638
+          </div>
+        </div>
+      </section>
+      <section class="ref">
+        <div class="ref-img">
+          <img src="../SIA PICS/washing.png" alt="" />
+          <div class="ref-wrapper">
+            <button class="shop">
+              <h5>Visit shop</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.999 8a.997.997 0 0 0-.143-.515L19.147 2.97A2.01 2.01 0 0 0 17.433 2H6.565c-.698 0-1.355.372-1.714.971L2.142 7.485A.997.997 0 0 0 1.999 8c0 1.005.386 1.914 1 2.618V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.382c.614-.704 1-1.613 1-2.618zm-2.016.251A2.002 2.002 0 0 1 17.999 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.219 4h2.214l2.55 4.251zm-9.977-.186L10.818 4h2.361l.813 4.065C13.957 9.138 13.079 10 11.999 10s-1.958-.862-1.993-1.935zM6.565 4h2.214l-.76 3.804.02.004c-.015.064-.04.124-.04.192 0 1.103-.897 2-2 2a2.002 2.002 0 0 1-1.984-1.749L6.565 4zm3.434 12h-4v-3h4v3z"
+                ></path>
+              </svg>
+            </button>
+            <button class="fav" onclick="addWashing()">
+              <h5>Add to Favorites</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ref-details">
+          <h2>Dowell WFA-75 Fully Automatic Washing Machine</h2>
+          <p>
+            Experience efficient and reliable laundry care with the Dowell
+            WFA-75 Fully Automatic Washing Machine. This appliance is designed
+            to handle your laundry needs with ease, featuring advanced washing
+            technology for optimal cleanliness and fabric care. With a
+            user-friendly interface and a range of washing programs, this
+            washing machine offers versatility and convenience. Elevate your
+            laundry routine with the performance and durability of the Dowell
+            Washing Machine.
+          </p>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            7.5 kg washing capacity
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            6 washing programs (normal, quick, jeans, anti-wrinkle, silk,
+            air-dry)
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            6, 9 & 12 minutes wash timer
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Tempered glass cover for actual washing monitoring
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            LXWXH: 55 X 57 X96 cm
+          </div>
+        </div>
+      </section>
+      <section class="ref">
+        <div class="ref-img rice">
+          <img src="../SIA PICS/rice-cooker.png" alt="" />
+          <div class="ref-wrapper">
+            <button class="shop">
+              <h5>Visit shop</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.999 8a.997.997 0 0 0-.143-.515L19.147 2.97A2.01 2.01 0 0 0 17.433 2H6.565c-.698 0-1.355.372-1.714.971L2.142 7.485A.997.997 0 0 0 1.999 8c0 1.005.386 1.914 1 2.618V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.382c.614-.704 1-1.613 1-2.618zm-2.016.251A2.002 2.002 0 0 1 17.999 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.219 4h2.214l2.55 4.251zm-9.977-.186L10.818 4h2.361l.813 4.065C13.957 9.138 13.079 10 11.999 10s-1.958-.862-1.993-1.935zM6.565 4h2.214l-.76 3.804.02.004c-.015.064-.04.124-.04.192 0 1.103-.897 2-2 2a2.002 2.002 0 0 1-1.984-1.749L6.565 4zm3.434 12h-4v-3h4v3z"
+                ></path>
+              </svg>
+            </button>
+            <button class="fav" onclick="addRice()">
+              <h5>Add to Favorites</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ref-details">
+          <h2>EDR-LSP (Drum Type Rice Cooker with Steamer)</h2>
+          <p>
+            Introducing the Eureka EDR LSP Drum-Type Rice Cooker with Steamer, a
+            sophisticated kitchen appliance that simplifies your cooking
+            experience. With its innovative drum-type design, this rice cooker
+            ensures even cooking, delivering consistently fluffy rice with each
+            use. The appliance features versatile cooking modes, catering to
+            different rice varieties and culinary preferences. The built-in
+            steamer function adds to its utility, enabling you to prepare
+            healthy and flavorful steamed dishes effortlessly. Elevate your
+            kitchen with the Eureka Drum-Type Rice Cooker, blending practical
+            functionality with a sleek and modern design.
+          </p>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            1-Touch Operation
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Cook rice or steam vegetables
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Keep rice warm, fresh, moist for hours
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Durable printed metal body
+          </div>
+        </div>
+      </section>
+      <section class="ref">
+        <div class="ref-img">
+          <img src="../SIA PICS/aircon2.png" alt="" />
+          <div class="ref-wrapper">
+            <button class="shop">
+              <h5>Visit shop</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.999 8a.997.997 0 0 0-.143-.515L19.147 2.97A2.01 2.01 0 0 0 17.433 2H6.565c-.698 0-1.355.372-1.714.971L2.142 7.485A.997.997 0 0 0 1.999 8c0 1.005.386 1.914 1 2.618V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.382c.614-.704 1-1.613 1-2.618zm-2.016.251A2.002 2.002 0 0 1 17.999 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.219 4h2.214l2.55 4.251zm-9.977-.186L10.818 4h2.361l.813 4.065C13.957 9.138 13.079 10 11.999 10s-1.958-.862-1.993-1.935zM6.565 4h2.214l-.76 3.804.02.004c-.015.064-.04.124-.04.192 0 1.103-.897 2-2 2a2.002 2.002 0 0 1-1.984-1.749L6.565 4zm3.434 12h-4v-3h4v3z"
+                ></path>
+              </svg>
+            </button>
+            <button class="fav" onclick="addAircon2()">
+              <h5>Add to Favorites</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ref-details">
+          <h2>Union® 1.0 HP Inverter Window Type Air Conditioner</h2>
+          <p>
+            Introducing the Union 1.0 HP Inverter Window-Type Air Conditioner, a
+            powerful and energy-efficient cooling solution for your space. This
+            innovative appliance combines cutting-edge inverter technology with
+            a convenient window-type design, ensuring optimal comfort with
+            reduced energy consumption. Enjoy customizable cooling with multiple
+            modes and fan speeds, allowing you to create the perfect indoor
+            climate. The Union Air Conditioner is designed for ease of
+            installation and operation, making it an ideal choice for those
+            seeking reliable and efficient cooling for their home or office.
+          </p>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Soft-touch control panel with LED display
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Digital control with remote
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Cooling Capacity: 5,454 kJ/hr
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Dimensions: 26.14 x 26.65 x 16.85 in (LxWxH)
+          </div>
+        </div>
+      </section>
+      <section class="ref">
+        <div class="ref-img efan">
+          <img src="../SIA PICS/efan.png" alt="" />
+          <div class="ref-wrapper">
+            <button class="shop">
+              <h5>Visit shop</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.999 8a.997.997 0 0 0-.143-.515L19.147 2.97A2.01 2.01 0 0 0 17.433 2H6.565c-.698 0-1.355.372-1.714.971L2.142 7.485A.997.997 0 0 0 1.999 8c0 1.005.386 1.914 1 2.618V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.382c.614-.704 1-1.613 1-2.618zm-2.016.251A2.002 2.002 0 0 1 17.999 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.219 4h2.214l2.55 4.251zm-9.977-.186L10.818 4h2.361l.813 4.065C13.957 9.138 13.079 10 11.999 10s-1.958-.862-1.993-1.935zM6.565 4h2.214l-.76 3.804.02.004c-.015.064-.04.124-.04.192 0 1.103-.897 2-2 2a2.002 2.002 0 0 1-1.984-1.749L6.565 4zm3.434 12h-4v-3h4v3z"
+                ></path>
+              </svg>
+            </button>
+            <button class="fav" onclick="addEfan()">
+              <h5>Add to Favorites</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ref-details">
+          <h2>Asahi DC-6082</h2>
+          <p>
+            Introducing the Asahi DC-6082 Refrigerator, a sleek and efficient
+            addition to your kitchen. This appliance boasts a spacious interior
+            and advanced cooling technology, providing optimal preservation for
+            your food and beverages. With its modern design and energy-efficient
+            features, the Asahi DC-6082 seamlessly combines style and
+            functionality. The refrigerator's thoughtful layout, adjustable
+            shelves, and temperature control options make it a reliable choice
+            for those seeking a versatile and reliable cooling solution.
+          </p>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            16″ (405mm) 5-leaf AS plastic fan blade
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            LED display for speed, preset & timer function
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Max speed: 1,000 RPM
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Max airflow: 54.5 m³/min
+          </div>
+        </div>
+      </section>
+      <section class="ref">
+        <div class="ref-img">
+          <img src="../SIA PICS//oven.png" alt="" />
+          <div class="ref-wrapper">
+            <button class="shop">
+              <h5>Visit shop</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.999 8a.997.997 0 0 0-.143-.515L19.147 2.97A2.01 2.01 0 0 0 17.433 2H6.565c-.698 0-1.355.372-1.714.971L2.142 7.485A.997.997 0 0 0 1.999 8c0 1.005.386 1.914 1 2.618V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.382c.614-.704 1-1.613 1-2.618zm-2.016.251A2.002 2.002 0 0 1 17.999 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.219 4h2.214l2.55 4.251zm-9.977-.186L10.818 4h2.361l.813 4.065C13.957 9.138 13.079 10 11.999 10s-1.958-.862-1.993-1.935zM6.565 4h2.214l-.76 3.804.02.004c-.015.064-.04.124-.04.192 0 1.103-.897 2-2 2a2.002 2.002 0 0 1-1.984-1.749L6.565 4zm3.434 12h-4v-3h4v3z"
+                ></path>
+              </svg>
+            </button>
+            <button class="fav" onclick="addOven()">
+              <h5>Add to Favorites</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ref-details">
+          <h2>Whirlpool MWP 305 ES Microwave Oven</h2>
+          <p>
+            Introducing the Whirlpool MWP 305 ES Microwave Oven, a versatile
+            kitchen companion designed for modern cooking needs. With a generous
+            30-liter capacity, this appliance accommodates a variety of dishes,
+            from quick snacks to full meals. The microwave features intuitive
+            controls and multiple cooking presets for convenience, while the
+            grill function adds a delightful touch of crispiness to your
+            culinary creations. The Whirlpool MWP 305 ES Microwave Oven combines
+            efficiency and innovation, making it an essential addition to any
+            kitchen for efficient and flavorful cooking.
+          </p>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Auto-cook Functions
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Digital Control
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Input Power: 1400W
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Dimension HxWxD: 30 x 53.9 x 39.8 cm
+          </div>
+        </div>
+      </section>
+      <section class="ref">
+        <div class="ref-img blender">
+          <img src="../SIA PICS/blender.png" alt="" />
+          <div class="ref-wrapper">
+            <button class="shop">
+              <h5>Visit shop</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.999 8a.997.997 0 0 0-.143-.515L19.147 2.97A2.01 2.01 0 0 0 17.433 2H6.565c-.698 0-1.355.372-1.714.971L2.142 7.485A.997.997 0 0 0 1.999 8c0 1.005.386 1.914 1 2.618V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.382c.614-.704 1-1.613 1-2.618zm-2.016.251A2.002 2.002 0 0 1 17.999 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.219 4h2.214l2.55 4.251zm-9.977-.186L10.818 4h2.361l.813 4.065C13.957 9.138 13.079 10 11.999 10s-1.958-.862-1.993-1.935zM6.565 4h2.214l-.76 3.804.02.004c-.015.064-.04.124-.04.192 0 1.103-.897 2-2 2a2.002 2.002 0 0 1-1.984-1.749L6.565 4zm3.434 12h-4v-3h4v3z"
+                ></path>
+              </svg>
+            </button>
+            <button class="fav" onclick="addBlender()">
+              <h5>Add to Favorites</h5>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ref-details">
+          <h2>Hanabishi Super Blender / Chopper HSBLEND100</h2>
+          <p>
+            Introducing the Hanabishi Super Blender Chopper, a multifunctional
+            kitchen powerhouse designed to simplify your food preparation tasks.
+            This versatile appliance features a robust blending mechanism,
+            allowing you to effortlessly create smoothies, shakes, and purees.
+            With an integrated chopper, it becomes your reliable partner for
+            chopping and grinding ingredients with precision. The Hanabishi
+            Super Blender Chopper, with its sleek design and user-friendly
+            controls, is a stylish addition to your kitchen that combines
+            performance and convenience for a seamless culinary experience
+          </p>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Capacity: 2.0 liter & 0.7 liter cup
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            One touch operation with pulse control
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            Easy to clean
+          </div>
+          <div class="checklist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+              ></path>
+            </svg>
+            220 x 180 x 350mm
+          </div>
+        </div>
+      </section>
+      <div class="search">
+        <div>
+          <input
+            type="text"
+            placeholder="Articles, Videos, Guides, Tips, Link"
+          />
+          <button>Search</button>
+        </div>
+      </div>
+      <footer>
+        <div class="logo-sec">
+          <img src="../SIA PICS/logo1.png" alt="" />
+          <h4>WattWise</h4>
+          <p>Empower, Innovate, Transform</p>
+        </div>
+        <div class="page-sec">
+          <h5>Pages</h5>
+          <ul>
+            <li>Home</li>
+            <li>Guide</li>
+            <li>Article</li>
+            <li>About Us</li>
+            <li>Tools</li>
+            <li>HomeContact Us</li>
+          </ul>
+        </div>
+        <div class="article-sec">
+          <h5>Latest Articles</h5>
+          <ul>
+            <li>Philippines - Oil & Gas</li>
+            <li>Top Technologies Transforming Energy in 2021</li>
+            <li>Oil and gas technology: Connectivity for higher performance</li>
+          </ul>
+        </div>
+        <div class="socmed-sec">
+          <h5>Social Medias</h5>
+          <div class="socmed">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                ></path>
+                <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                <path
+                  d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <h5>Help</h5>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms and Condition</li>
+          </ul>
+        </div>
+        <p class="mark">© Copyright 2023 EnerTrackHub. All rights reserved.</p>
+      </footer>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
