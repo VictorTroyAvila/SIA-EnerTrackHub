@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -91,6 +91,181 @@
                 </div>
                 <div class="sign-out">
                     <a href="#" class="sign-out">Sign Out</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="section">
+            <img src="../html/images/logo.png" alt="WattWise Logo" style="width: 150px; height: 150px;">
+            <p class="wattWise">WattWise</p>
+            <p class="italic">Empower, Innovate, Transform</p>
+        </div>
+    
+        <div class="section">
+            <h2>Page</h2>
+            <p><a href="#">Home</a> | <a href="#">Guide</a></p>
+            <p><a href="#">Article</a> | <a href="#">About Us</a></p>
+            <p><a href="#">Tools</a> | <a href="#">Contact Us</a></p>
+        </div>
+    
+        <div class="section">
+            <h2>Latest Articles</h2>
+            <p><a href="#">Philippines - Oil & Gas</a></p>
+            <p><a href="#">Top Technologies</a></p>
+            <p><a href="#">Transforming Energy in 2021</a></p>
+            <p><a href="#">Oil and gas technology:</a></p>
+            <p><a href="#">Connectivity for higher performance</a></p>
+        </div>
+    
+        <div class="section">
+            <h2>Social Medias</h2>
+                <p>
+                    <a href="#" class="black-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="black-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="black-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="black-icon"><i class="fab fa-youtube"></i></a>
+                </p>
+                <p><a href="#">Help</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms and Condition</a></p>
+          </div>
+          
+    
+        <div class="section">
+          <h2>Get in Touch</h2>
+            <p><i class="fas fa-phone"></i> <a href="#">+1012 3456 789</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:iapply@pup.edu.ph">iapply@pup.edu.ph</a></p>
+            <p><a href="#">837H+C88, Biñan, Laguna</a></p>
+        </div>
+        </footer>
+        
+        <div class="copyright">
+            <p>© Copyright 2023 WattWise. All rights reserved.</p>
+        </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const choices = document.querySelectorAll('.choice');
+
+        choices.forEach(choice => {
+            choice.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default behavior of the link
+                choices.forEach(c => c.classList.remove('clicked'));
+                this.classList.add('clicked');
+                
+                // Check the ID of the clicked choice and perform redirection
+                if (this.id === 'favorites') {
+                    window.location.href = 'favorites.html';
+                }
+            });
+        });
+    });
+    var noRefreshLinks = document.querySelectorAll('.no-refresh-link');
+    
+        // Add a click event listener to each link
+        noRefreshLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            // Prevent the default behavior of the link
+            event.preventDefault();
+        });
+    });
+</script>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../html/css/user_profile.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Logo">
+            <h1>WattWise</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Prfiles</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <a href="../html/login.html" class="login">Log in</a>
+            
+        </div>
+        <a hred="#"><img src="../html/images/Search_Icon.png" class="searchicon"></a>
+    </header>
+    <div class="left-container">
+        <h1 class="h">WattWise</h1>
+        <h2 class="hh">Your Energy Companion</h2>
+        <p class="p">Explore sustainable practices, manage your energy usage, and stay 
+            <br/> updated with the latest innovations for a greener future.</p>
+    </div>
+
+    <div class="main-container">
+        <div class="container-one">
+            <ul>
+                <li class="choice" id="profile"><i class="fas fa-user"></i><a href="#" class="no-refresh-link">Profile</a></li>
+                <li class="choice" id="favorites"><i class="fas fa-heart"></i><a href="#" class="no-refresh-link">Favorites</a></li>
+            </ul>
+        </div>
+        <div class="container-two">
+            <div class="pufff">
+                <h1>Profile</h1>
+                <a href="#" class="save">Save</a>
+            </div>
+            <form>
+                <div class="user-info">
+                    <div class="profile-image">
+                        <img src="../html/images/Ellipse 18.png" alt=""/>
+                        <a href="#" class="change-photo">Change Photo</a>
+                    </div>
+                    <div class="user">
+                        <div class="user-left">
+                            <div class="input-group">
+                                <label for="fullName">FULL NAME:</label>
+                            </br>
+                                <input type="text" id="fullName" placeholder="Susan">
+                            </div>
+                      
+                            <div class="input-group">
+                                <label for="email">EMAIL:</label>
+                            </br>
+                                <input type="email" id="email" placeholder="Kaysusantayo@gmail.com">
+                            </div>
+                        </div>
+                        <div class="user-right">
+                            <div class="input-group">
+                                <label for="username">USERNAME:</label>
+                            </br>
+                                <input type="username" id="username" placeholder="@Susan">
+                            </div>
+                      
+                            <div class="input-group">
+                                <label for="password">PASSWORD:</label>
+                            </br>
+                                <input type="password" id="password" placeholder="**********">
+                            </div>
+                            <a href="#" class="change">Change</a>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="conact">Connected Accounts</div>
+                        <input type="account" class="connected-account" placeholder="Kaysusantayo@gmail.com">
+                        <a href="#" class="disconnect">Disconnect</a>
+                    </div>
+                </div>
+                <div class="sign-out">
+                    <a href="login.php" class="sign-out">Sign Out</a>
                 </div>
             </form>
         </div>
