@@ -79,22 +79,6 @@ function APPLCS() {
     }
 }
 
-function incrementValue()
-{
-    var i = 0;
-    function buttonClick() {
-        document.getElementById('inc').value = ++i;
-    }
-}
-
-function decrementValue()
-{
-    var i = 0;
-    function buttonClick() {
-        document.getElementById('inc').value = --i;
-    }
-}
-
 function calcTotal() {
     var total = document.getElementById('ttl');
 
@@ -156,45 +140,184 @@ function applianceChoices(clicked)
     });
 }
 
-
-
-// Enter Event Listener
-// function enter() {
-//     var input = document.getElementById("kWh");
-    
-//     input.addEventListener("keypress", function(event) {
-//         if (event.key == "Enter") {
-//         event.preventDefault();
-//         input.value = '';
-//         }
-//         else
-//         {
-//             input.value = 'did not work';
-//         }
-// });
-// }
-
 function incrementValue(clicked) {
-    document.getElementById(clicked).addEventListener('click', function() {
         
         if (clicked == 'inUR')
         {
-            document.getElementById('kWh').value++;
-            calcTotal()
+                document.getElementById('kWh').value++;
+                calcTotal()
         }
         else if (clicked == 'inHPD')
         {
-            document.getElementById('hPd').value++;
-            calcTotal()
+            if (document.getElementById('hPd').value == 24)
+            {
+                calcTotal()
+            }
+            else
+            {
+                document.getElementById('hPd').value++;
+                calcTotal()
+            }
         }
         else if (clicked == 'inDPY')
         {
-            document.getElementById('dPy').value++;
-            calcTotal()
+            if (document.getElementById('dPy').value == 365)
+            {
+                calcTotal()
+            }
+            else
+            {
+                document.getElementById('dPy').value++;
+                calcTotal()
+            }
         }
-    });
 }
 
-function decrementValue() {
-
+function decrementValue(clicked) { 
+        if (clicked == 'deUR')
+        {
+            if (document.getElementById('kWh').value == 0)
+            {
+                calcTotal()
+            }
+            else
+            {
+                document.getElementById('kWh').value--;
+                calcTotal()
+            }
+        }
+        else if (clicked == 'deHPD')
+        {
+            if (document.getElementById('hPd').value == 0)
+            {
+                calcTotal()
+            }
+            else
+            {
+                document.getElementById('hPd').value--;
+                calcTotal()
+            }
+        }
+        else if (clicked == 'deDPY')
+        {
+            if (document.getElementById('dPy').value == 0)
+            {
+                calcTotal()
+            }
+            else
+            {
+                document.getElementById('dPy').value--;
+                calcTotal()
+            }
+        }
 }
+
+function increaseFontSize() {
+    var elements = document.getElementsByTagName("*");
+    
+    for(var i = 0; i < elements.length; i++) {
+      var computedFontSize = window.getComputedStyle(elements[i]).fontSize;
+      
+      var newSize = parseFloat(computedFontSize) * 1.2;
+
+      elements[i].style.fontSize = newSize + 'px';
+    }
+  } 
+
+function decreaseFontSize() {
+    var elements = document.getElementsByTagName("*");
+    
+    for(var i = 0; i < elements.length; i++) {
+      
+      var computedFontSize = window.getComputedStyle(elements[i]).fontSize;
+      
+      
+      var newSize = parseFloat(computedFontSize) * 0.8;
+      
+      elements[i].style.fontSize = newSize + 'px';
+    }
+  } 
+
+function increaseLetterSpacing() {
+    var elements = document.getElementsByTagName("*");
+    
+    for(var i = 0; i < elements.length; i++) {
+      var computedLetterSpacing = window.getComputedStyle(elements[i]).letterSpacing;
+      
+      if (computedLetterSpacing !== 'normal') {
+        var newSize = parseFloat(computedLetterSpacing) + 1; 
+        elements[i].style.letterSpacing = newSize + 'px';
+      } else {
+        elements[i].style.letterSpacing = '1px';
+      }
+    }
+  }
+
+function decreaseLetterSpacing() {
+    var elements = document.getElementsByTagName("*");
+    
+    for(var i = 0; i < elements.length; i++) {
+      var computedLetterSpacing = window.getComputedStyle(elements[i]).letterSpacing;
+      
+      if (computedLetterSpacing !== 'normal') {
+        var newSize = parseFloat(computedLetterSpacing) - 1; 
+        elements[i].style.letterSpacing = newSize + 'px';
+      } else {
+        elements[i].style.letterSpacing = '1px';
+      }
+    }
+  }
+
+function increaseLineHeight() {
+    var elements = document.getElementsByTagName("*");
+    
+    for(var i = 0; i < elements.length; i++) {
+      var computedLineHeight = window.getComputedStyle(elements[i]).lineHeight;
+      
+      if (computedLineHeight !== 'normal') {
+        var newSize = parseFloat(computedLineHeight) + 0.001;
+        elements[i].style.lineHeight = newSize;
+      } else {
+        elements[i].style.lineHeight = '0';
+      }
+    }
+  }
+
+function decreaseLineHeight() {
+    var elements = document.getElementsByTagName("*");
+    
+    for(var i = 0; i < elements.length; i++) {
+      var computedLineHeight = window.getComputedStyle(elements[i]).lineHeight;
+      
+      if (computedLineHeight !== 'normal') {
+        var newSize = parseFloat(computedLineHeight) - 0.001;
+        elements[i].style.lineHeight = newSize;
+      } else {
+        elements[i].style.lineHeight = '0';
+      }
+    }
+  }
+
+function changeFontStyle1() {
+    var elements = document.getElementsByTagName("*");
+    
+    for(var i = 0; i < elements.length; i++) {
+      elements[i].style.fontFamily = "Verdana, serif";
+    }
+  }
+
+function changeFontStyle2() {
+    var elements = document.getElementsByTagName("*");
+    
+    for(var i = 0; i < elements.length; i++) {
+      elements[i].style.fontFamily = "Dyslexie, serif";
+    }
+  }
+  
+function changeFontStyle3() {
+    var elements = document.getElementsByTagName("*");
+    
+    for(var i = 0; i < elements.length; i++) {
+      elements[i].style.fontFamily = "Helvetica, serif";
+    }
+  }
