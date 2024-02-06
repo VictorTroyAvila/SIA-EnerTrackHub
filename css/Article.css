@@ -3,7 +3,12 @@
 
 body {
     margin: 0;
+    line-height: normal;
     font-family: "Inter", sans-serif;
+}
+
+footer {
+    margin-top: 10%;
 }
 
 .row {
@@ -171,30 +176,35 @@ body {
 /* Calculator */
 .calcTitle {
     margin-top: 20%;
-    margin-left: 25%;
+    text-align: center;
     font-size: 50px;
 }
 
-.ApplianceEnergyCalcu {
+.applianceEnergyCalcu {
     position: relative;
-    width: calc(100% / 12*6.5);
+    width: calc(100% / 12*5);
     margin-top: 10%;
-    margin-left: 23%;
+    margin-left: 29.5%;
     border: solid;
 }
 
 
-.ApplianceEnergyCalcu h3 {
-    margin-left: 5%;
+.applianceEnergyCalcu h3 {
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-bottom: 2%;
+    font-size: 50px;
 }
 
-.ApplianceEnergyCalcu span {
+.applianceEnergyCalcu span {
     margin-left: 5%;
 }
 
 .al {
     position: absolute;
-    width: 3%;
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 6%;
 }
 
 .point {
@@ -202,54 +212,103 @@ body {
 }
 
 .in {
-    margin-left: 93%;
+    position: absolute;
+    margin-left: 40% ;
+    margin-top: -1.5%;
+    height: 3vh;
 }
 
 .de {
-    margin-left: 93%;
+    position: absolute;
+    margin-left: 40% ;
+    margin-top: 3.5%;
+    height: 3vh;
 }
 
 .inp {
-    margin-left: 5%;
+    margin-top: 1%;
+    margin-left: 12%;
+    height: 4vh;
+    font-size: 30px;
+}
+
+.inp2 {
+    height: 4vh;
+    margin-top: 2%;
+    margin-left: 33%;
+    font-size: 30px;
 }
 
 .appliance {
     border: solid;
 }
 
+.appliance  .choice {
+    margin-left: 15%;
+    margin-bottom: 2%;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .choices {
     display: none;
 }
 
-.wattage {
-    border: solid;
+.choices button{
+    margin-bottom: 2%;
+    margin-top: 3%;
+    margin-left: 10%;
+    font-size: 25px;
+    width: 20%;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 1%;
+    cursor: pointer;
 }
 
-.watts {
-    margin-left: 5%;
+.choices  button:hover {background-color: ghostwhite;}
+
+.choices button:active {
+    background-color: ghostwhite;
+    transform: translateY(1px);
+}
+
+.apl {
+    margin-left: 15%;
+    font-size: 30px;
+}
+
+.wattage {
+    border: solid;
+    height: 15vh;
 }
 
 .utilityrate {
     border: solid;
+    height: 15vh;
 }
 
 .hoursperday {
     border: solid;
+    height: 15vh;
 }
 
 .daysperyear {
     border: solid;
+    height: 15vh;
 }
 
 .total {
     border: solid;
+    height: 12vh;
 }
 
-/* Footer */
-.foot {
-    position: relative;
-    width: 100%;
-    height: fit-content;
+.total h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 1%;
 }
 
 /* Accessabilities */

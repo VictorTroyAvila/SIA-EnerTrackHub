@@ -157,17 +157,21 @@
 
     <!-- Calculator -->
     <div class="calcTitle">Calculating Annual Electricity Consumption and Costs</div>
-    <div class="ApplianceEnergyCalcu">
+    <div class="applianceEnergyCalcu">
         
         <!-- appliance -->
         <div class="appliance">
             <img class="al" src="../SIA PICS/Bulb.png">
             <h3>My Appliance</h3>
-            <span>Choices</span>
-            <div class="choices">
-                <button class="A1">Refrigerator</button>
-                <button class="A2">Air Conditioner</button>
-                <button class="A3">Television</button>
+            <button class="choice" onclick="APPLCS()">Choices</button>
+            <input type="text" class="apl" id="apl" value=''></input>
+            <div class="choices" id="choices">
+                <button onclick="applianceChoices(this.id)" id="Refrigerator">Refrigerator</button>
+                <button onclick="applianceChoices(this.id)" id="Air Conditioner">Air Conditioner</button>
+                <button onclick="applianceChoices(this.id)" id="Television">Television</button>
+                <button onclick="applianceChoices(this.id)" id="Blender">Blender</button>
+                <button onclick="applianceChoices(this.id)" id="Microwave">Microwave</button>
+                <button onclick="applianceChoices(this.id)" id="Oven">Oven</button>
             </div>
         </div>
         
@@ -176,7 +180,7 @@
             <img class="al" src="../SIA PICS/bolt.png">
             <h3>Wattage</h3>
             <form action="">
-            <input class="watts" type="text">
+            <input class="inp" id="wtz" type="text" value="">
             </form>
         </div>
         
@@ -184,105 +188,99 @@
         <div class="utilityrate">
             <img class="al" src="../SIA PICS/bill.png">
             <h3>Utility Rate</h3>
-            <button class="in" onclick="incrementValue()"><img class="point" src="../SIA PICS/up.png"></button>
-            <button class="de" onclick="decrementValue()"><img class="point" src="../SIA PICS/down.png"></button>
-            <input type="text" class="inp" id="kWh" value="0"></input>
+            <input type="text" class="inp" id="kWh" value="1"></input>
+            <button class="in" onclick="incrementValue(this.id)" id="inUR"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue(this.id)" id="deUR"><img class="point" src="../SIA PICS/down.png"></button>
         </div>
         
         <!-- hoursperday -->
         <div class="hoursperday">
             <img class="al" src="../SIA PICS/clock.png">
             <h3>Hours used per day</h3>
-            <button class="in" onclick="incrementValue()"><img class="point" src="../SIA PICS/up.png"></button>
-            <button class="de" onclick="decrementValue()"><img class="point" src="../SIA PICS/down.png"></button>
-            <input type="text" class="inp" id="hPd" value="0"></input>
+            <input type="text" class="inp" id="hPd" value="1"></input>
+            <button class="in" onclick="incrementValue(this.id)" id="inHPD"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue(this.id)" id="deHPD"><img class="point" src="../SIA PICS/down.png"></button>
         </div>
         
         <!-- daysperyear -->
         <div class="daysperyear">
             <img class="al" src="../SIA PICS/calendar.png">
             <h3>Days used per year</h3>
-            <button class="in" onclick="incrementValue()"><img class="point" src="../SIA PICS/up.png"></button>
-            <button class="de" onclick="decrementValue()"><img class="point" src="../SIA PICS/down.png"></button>
-            <input type="text" class="inp" id="dPy" value="0"></input>
+            <input type="text" class="inp" id="dPy" value="1"></input>
+            <button class="in" onclick="incrementValue(this.id)" id="inDPY"><img class="point" src="../SIA PICS/up.png"></button>
+            <button class="de" onclick="decrementValue(this.id)" id="deDPY"><img class="point" src="../SIA PICS/down.png"></button>
         </div>
         
         <!-- total -->
         <div class="total">
             <h2>ENERGY USE AND COST PER YEAR</h2>
-            <input type="text">
+            <input type="text" class="inp2" id="ttl" value="0">
         </div>
 
     </div>
     
-    <!-- Footer
+    <!-- Footer -->
     <footer>
-        <div class="foot">
-            <div class="container">
-            
-                <div class="row">
-                    
-                    Copright
-                    <div class="copyright">
-                    © Copyright 2023 WattWise. All rights reserved.
-                    </div>
-    
-                    Company Tag
-                    <div class="CompanyTag">
-                        <img src="../SIA PICS/Blue Orange Minimalist Solar Energy Logo (1).png">
-                        <div class="name">WattWise</div>
-                        <div class="moto">Empower, Innovate, Transform</div>
-                    </div>
-                    
-                    Page container
-                    <div class="PageContainer1">
-                        <div class="pages">Pages</div>
-                        <div class="pHome"><a href="#">Home</a></div>
-                        <div class="pArticle"><a href="#">Article</a></div>
-                        <div class="pTools"><a href="#">Tools</a></div>
-                    </div>
-                    
-                    <div class="PageContainer2">
-                        <div class="pGuide"><a href="#">Guide</a></div>
-                        <div class="pAboutUs"><a href="#">About Us</a></div>
-                        <div class="pContactUs"><a href="#">Contact Us</a></div>
-                    </div>
-                    
-                    
-                    Footer Articles
-                    <div class="ShortArticles">
-                        <div class="latestArticles">Latest Articles</div>
-                        <div class="la1">Philippines - Oil & Gas</div>
-                        <div class="la2">Top Technologies <br>Transforming Energy in 2021</div>
-                        <div class="la3">Oil and gas technology <br>Connectivity for higher <br>performance</div>
-                    </div>
-                    
-                    Social Media Platforms
-                    <div class="smp">
-                        <div class="socials">Social Media</div>
-                        <img class="fb" src="../SIA PICS/fb.png">
-                        <img class="ig" src="../SIA PICS/ig.png">
-                        <img class="twtr" src="../SIA PICS/twtr.png">
-                        <img class="yt" src="../SIA PICS/yt.png">
-                    </div>
-                    
-                    Service and Security
-                    <div class="SaS">
-                        <div class="help">Help</div>
-                        <div class="hPp">Private Policy</div>
-                        <div class="hTc">Terms and Conditions</div>
-                    </div>
-                    
-                    Access
-                    <div class="Contacts">
-                        <div class="gIt">Get in Touch</div>
-                    <div class="gtNo"><img src="../SIA PICS/tp.png">+1012 2356 789</div>
-                    <div class="gtEmail"><img src="../SIA PICS/em.png">iapply@pup.edu.ph</div>
-                    <div class="gtAdrs">873H+C88, Biñan, Laguna</div>
-                    </div>
-                </div>
-        </div>
-    </footer> -->
+        <div class="container">
+     
+         <div class="row">
+     
+         <!-- Company Tag -->
+         <div class="CompanyTag">
+         <img src="../SIA PICS/Blue Orange Minimalist Solar Energy Logo (1).png">
+         <div class="name">WattWise</div>
+         <div class="moto">Empower, Innovate, Transform</div>
+         </div>
+     
+         <!-- Page container -->
+         <div class="PageContainer1">
+         <div class="pages">Pages</div>
+         <div class="pHome">Home</div>
+         <div class="pArticle">Article</div>
+         <div class="pTools">Tools</div>
+         </div>
+     
+         <div class="PageContainer2">
+             <div class="pGuide">Guide</div>
+             <div class="pAboutUs">About Us</div>
+             <div class="pContactUs">Contact Us</div>
+             </div>
+         
+     
+         <!-- Footer Articles -->
+         <div class="ShortArticles">
+         <div class="latestArticles">Latest Articles</div>
+         <div class="la1">Philippines - Oil & Gas</div>
+         <div class="la2">Top Technologies <br>Transforming Energy in 2021</div>
+         <div class="la3">Oil and gas technology <br>Connectivity for higher <br>performance</div>
+         </div>
+     
+         <!-- Social Media Platforms -->
+         <div class="smp">
+             <div class="socials">Social Media</div>
+             <img class="fb" src="..\SIA PICS\fb.png">
+             <img class="ig" src="..\SIA PICS\ig.png">
+             <img class="twtr" src="..\SIA PICS\twtr.png">
+             <img class="yt" src="..\SIA PICS\yt.png">
+         </div>
+     
+         <!-- Service and Security -->
+         <div class="SaS">
+         <div class="help">Help</div>
+         <div class="hPp">Private Policy</div>
+         <div class="hTc">Terms and Conditions</div>
+         </div>
+     
+         <!-- Access -->
+         <div class="Contacts">
+         <div class="gIt">Get in Touch</div>
+         <div class="gtNo"><img src="..\SIA PICS\tp.png">+1012 2356 789</div>
+         <div class="gtEmail"><img src="..\SIA PICS\em.png">iapply@pup.edu.ph</div>
+         <div class="gtAdrs">873H+C88, Biñan, Laguna</div>
+         </div>
+     </div>
+     </div>
+     </footer>
 
     <!-- Accessability -->
     <button class="access" onclick="accessability()" id="accessButton">
@@ -300,36 +298,34 @@
         <div class="options">
 
         <!-- Font Spacing -->
-        <button class="accordion" onclick="AFSp()">Spacing</button>
+        <button class="accordion" onclick="accordion(this.id)" id="idsp">Spacing</button>
         <div class="btngrp" id="AFSpbtngrp">
-        <button class="stage">Sp1</button>
-        <button class="stage">Sp2</button>
-        <button class="stage">Sp3</button>
+        <button class="stage" onclick="increaseLetterSpacing()">Increase Font Spacing</button>
+        <button class="stage" onclick="decreaseLetterSpacing()">Decrease Font Spacing</button>
+        </div>
+        
+        <!-- Font Size -->
+        <button class="accordion" onclick="accordion(this.id)" id="idfsi">Font Size</button>
+        <div class="btngrp" id="AFSibtngrp">
+        <button class="stage" onclick="increaseFontSize()">Increase Font Size</button>
+        <button class="stage" onclick="decreaseFontSize()">Decrease Font Size</button>
+        </div>
+
+        <!-- Line Spacing -->
+        <button class="accordion" onclick="accordion(this.id)" id="idlh">Line Height</button>
+        <div class="btngrp" id="LHbtngrp">
+        <button class="stage" onclick="increaseLineHeight()">Increase Line Height</button>
+        <button class="stage" onclick="decreaseLineHeight()">Increase Line Height</button>
         </div>
 
         <!-- Font Style -->
-        <button class="accordion" onclick="AD()">Dyslexia</button>
+        <button class="accordion" onclick="accordion(this.id)" id="idd">Dyslexia</button>
         <div class="btngrp" id="ADbtngrp">
-        <button class="stage">D1</button>
-        <button class="stage">D2</button>
-        <button class="stage">D3</button>
-        </div>
-
-        <!-- Font Size -->
-        <button class="accordion" onclick="AFSi()">Font Size</button>
-        <div class="btngrp" id="AFSibtngrp">
-        <button class="stage">FSi1</button>
-        <button class="stage">FSi2</button>
-        <button class="stage">FSi3</button>
+        <button class="stage" onclick="changeFontStyle1()">D1</button>
+        <button class="stage" onclick="changeFontStyle2()">D2</button>
+        <button class="stage" onclick="changeFontStyle3()">D3</button>
         </div>
         
-        <!-- Line Spacing -->
-        <button class="accordion" onclick="LH()">Line Height</button>
-        <div class="btngrp" id="LHbtngrp">
-        <button class="stage">LH1</button>
-        <button class="stage">LH2</button>
-        <button class="stage">LH3</button>
-        </div>
         </div>
     </div>
 
